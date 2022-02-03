@@ -1,0 +1,38 @@
+import 'package:flutter/material.dart';
+import 'package:moleculas_ar/shared/theme/app_theme.dart';
+
+class SplashPage extends StatelessWidget {
+  const SplashPage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppTheme.colors.background,
+      body: Column(
+        children: [
+          Expanded(
+            flex: 3,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset("assets/images/logo.png"),
+                SizedBox(height: 20),
+                Text("Moléculas AR").splashText,
+              ],
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Center(
+              child: CircularProgressIndicator(
+                valueColor:
+                    AlwaysStoppedAnimation<Color>(AppTheme.colors.primaryLight),
+                strokeWidth: 3,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
