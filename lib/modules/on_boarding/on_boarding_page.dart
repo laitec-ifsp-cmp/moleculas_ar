@@ -27,7 +27,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         actions: [
           TextButton(
             onPressed: () {
-              // TODO: Go to HomePage()
+              Navigator.pushReplacementNamed(context, "/home_navigation");
             },
             child: Text("Pular".toUpperCase()).jumpOnBoarding,
             style: TextButton.styleFrom(
@@ -83,7 +83,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 );
               });
             } else {
-              // TODO: Go to HomePage()
+              Navigator.pushReplacementNamed(context, "/home_navigation");
             }
           },
           onBackPressed: () {
