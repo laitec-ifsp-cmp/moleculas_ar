@@ -32,7 +32,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             child: Text("Pular".toUpperCase()).jumpOnBoarding,
             style: TextButton.styleFrom(
               primary: AppTheme.colors.primaryLight,
-              padding: EdgeInsets.symmetric(horizontal: 20),
+              padding: EdgeInsets.symmetric(horizontal: 24),
             ),
           ),
         ],

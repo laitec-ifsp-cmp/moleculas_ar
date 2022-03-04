@@ -17,4 +17,7 @@ extension TextExt on Text {
 
   Text get jumpOnBoarding =>
       Text(this.data!, style: AppTheme.textStyles.jumpOnBoarding);
+
+  Text get itemTitle =>
+      Text(this.data!, style: AppTheme.textStyles.itemTitle);
 }

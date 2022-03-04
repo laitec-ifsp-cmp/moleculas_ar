@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:moleculas_ar/modules/home_molecules/home_molecules_page.dart';
 import 'package:moleculas_ar/modules/home_navigation/widgets/home_bottom_nav/home_bottom_nav_widget.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
-import 'package:moleculas_ar/shared/widgets/gradient_magin/gradient_margin_widget.dart';
+import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
 class HomeNavigationPage extends StatefulWidget {
   const HomeNavigationPage({Key? key}) : super(key: key);
@@ -36,7 +37,7 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
               });
             },
             children: [
-              Container(),
+              HomeMoleculesPage(),
               Container(),
             ],
           ),

@@ -8,6 +8,7 @@ abstract class IAppColors {
   Color get background;
   Color get light;
   Color get stroke;
+  Color get shadow;
   Color get darkOrange;
   Color get oceanGreen;
 }
@@ -32,7 +33,10 @@ class AppColors implements IAppColors {
   Color get light => const Color(0xFFE7E9EF);
 
   @override
-  Color get stroke => const Color(0xFF0A0436);
+  Color get stroke => const Color(0xFF0A0436).withOpacity(0.03);
+
+  @override
+  Color get shadow => const Color(0xFF0A0436).withOpacity(0.05);
 
   @override
   Color get darkOrange => const Color(0xFFC06541);
