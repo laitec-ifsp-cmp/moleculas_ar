@@ -69,7 +69,9 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
               });
             }
           },
-          onTapArMolecules: () {},
+          onTapArMolecules: () {
+            Navigator.pushNamed(context, "/ar_molecule_target");
+          },
           onTapSettings: () {
             if (_currentPage != 1) {
               setState(() {
