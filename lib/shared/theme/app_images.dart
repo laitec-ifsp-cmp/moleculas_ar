@@ -3,6 +3,10 @@ abstract class IAppImages {
   String get arrowLeft;
   String get arrowRight;
   String get iconDnaMolecule;
+  String get iconAbout;
+  String get iconAboutBook;
+  String get iconAboutFeedback;
+  String get iconAboutTargets;
   String get iconGear;
   String get iconMolecule;
   String get iconSingleMolecule;
@@ -28,6 +32,18 @@ class AppImages implements IAppImages {
 
   @override
   String get iconGear => "assets/images/icon_gear.svg";
+
+  @override
+  String get iconAbout => "assets/images/icon_about.png";
+
+  @override
+  String get iconAboutBook => "assets/images/icon_about_book.png";
+
+  @override
+  String get iconAboutFeedback => "assets/images/icon_about_feedback.png";
+
+  @override
+  String get iconAboutTargets => "assets/images/icon_about_targets.png";
 
   @override
   String get iconMolecule => "assets/images/icon_molecule.svg";

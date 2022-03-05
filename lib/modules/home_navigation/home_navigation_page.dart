@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moleculas_ar/modules/home_about/home_about_page.dart';
 import 'package:moleculas_ar/modules/home_molecules/home_molecules_page.dart';
 import 'package:moleculas_ar/modules/home_navigation/widgets/home_bottom_nav/home_bottom_nav_widget.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
@@ -36,9 +37,9 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
                 _currentPage = newPage;
               });
             },
-            children: [
+            children: const [
               HomeMoleculesPage(),
-              Container(),
+              HomeAboutPage(),
             ],
           ),
           GradientMarginWidget(
