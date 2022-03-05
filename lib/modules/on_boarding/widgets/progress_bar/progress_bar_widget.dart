@@ -22,18 +22,21 @@ class ProgressBarWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         currentPage > 0
-            ? OutlinedButton(
+            ? ElevatedButton(
                 onPressed: onBackPressed,
                 child: SvgPicture.asset(
                   AppTheme.images.arrowLeft,
                   width: 20,
                   height: 20,
                 ),
-                style: OutlinedButton.styleFrom(
-                  backgroundColor: AppTheme.colors.background,
-                  shadowColor: AppTheme.colors.light,
+                style: ElevatedButton.styleFrom(
+                  elevation: 1,
                   shape: CircleBorder(),
                   fixedSize: Size(40, 40),
+                  primary: AppTheme.colors.background,
+                  onPrimary: AppTheme.colors.primaryLight,
+                  shadowColor: AppTheme.colors.shadow,
+                  side: BorderSide(width: 1, color: AppTheme.colors.light),
                 ),
               )
             : Container(
@@ -56,14 +59,16 @@ class ProgressBarWidget extends StatelessWidget {
           separatorBuilder: (BuildContext context, int index) =>
               SizedBox(width: 10),
         ),
-        OutlinedButton(
+        ElevatedButton(
           onPressed: onNextPressed,
           child: SvgPicture.asset(AppTheme.images.arrowRight),
-          style: OutlinedButton.styleFrom(
-            backgroundColor: AppTheme.colors.primary,
-            shadowColor: AppTheme.colors.light,
+          style: ElevatedButton.styleFrom(
+            elevation: 1,
             shape: CircleBorder(),
             fixedSize: Size(48, 48),
+            primary: AppTheme.colors.primary,
+            onPrimary: AppTheme.colors.primaryLight,
+            shadowColor: AppTheme.colors.shadow,
           ),
         ),
       ],

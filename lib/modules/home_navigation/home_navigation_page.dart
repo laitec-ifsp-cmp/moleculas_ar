@@ -21,7 +21,7 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
     return Scaffold(
       backgroundColor: AppTheme.colors.background,
       appBar: AppBar(
-        toolbarHeight: 90,
+        toolbarHeight: 104,
         backgroundColor: AppTheme.colors.background,
         elevation: 0,
         title: Text((_currentPage == 0) ? "Moléculas" : "Sobre"),

@@ -5,8 +5,8 @@ import 'app_theme.dart';
 
 abstract class IAppTextStyles {
   TextStyle get splashText;
-  TextStyle get onBoardingTitle;
-  TextStyle get onBoardingSummary;
+  TextStyle get title;
+  TextStyle get summary;
   TextStyle get jumpOnBoarding;
   TextStyle get homeTitle;
   TextStyle get appBarTitle;
@@ -15,6 +15,7 @@ abstract class IAppTextStyles {
   TextStyle get subItemSummary;
   TextStyle get moleculeName;
   TextStyle get moleculeFormula;
+  TextStyle get textFilledButton;
 }
 
 class AppTextStyles implements IAppTextStyles {
@@ -26,14 +27,14 @@ class AppTextStyles implements IAppTextStyles {
       );
 
   @override
-  TextStyle get onBoardingTitle => GoogleFonts.poppins(
+  TextStyle get title => GoogleFonts.poppins(
         fontSize: 22,
         color: AppTheme.colors.textPrimary,
         fontWeight: FontWeight.w600, // Semi-bold
       );
 
   @override
-  TextStyle get onBoardingSummary => GoogleFonts.poppins(
+  TextStyle get summary => GoogleFonts.poppins(
         fontSize: 14,
         color: AppTheme.colors.textSecondary,
         fontWeight: FontWeight.normal,
@@ -94,4 +95,11 @@ class AppTextStyles implements IAppTextStyles {
         color: AppTheme.colors.oceanGreen,
         fontWeight: FontWeight.w600, // Semi-bold
       );
+
+  @override
+  TextStyle get textFilledButton => GoogleFonts.poppins(
+    fontSize: 16,
+    color: AppTheme.colors.background,
+    fontWeight: FontWeight.w600, // Semi-bold
+  );
 }

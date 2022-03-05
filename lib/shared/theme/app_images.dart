@@ -1,4 +1,7 @@
 abstract class IAppImages {
+  String get aboutEBook;
+  String get aboutFeedback;
+  String get aboutTargets;
   String get logo;
   String get arrowLeft;
   String get arrowRight;
@@ -18,6 +21,15 @@ abstract class IAppImages {
 }
 
 class AppImages implements IAppImages {
+  @override
+  String get aboutEBook => "assets/images/about_eBook.svg";
+
+  @override
+  String get aboutFeedback => "assets/images/about_feedback.svg";
+
+  @override
+  String get aboutTargets => "assets/images/about_targets.svg";
+
   @override
   String get logo => "assets/images/logo.png";
 
