@@ -18,6 +18,7 @@ abstract class IAppImages {
   String get onBoardingDna;
   String get onBoardingDna3d;
   String get onBoardingDnaHolo;
+  String get cycloniteGeometricStructure;
 }
 
 class AppImages implements IAppImages {
@@ -77,4 +78,7 @@ class AppImages implements IAppImages {
 
   @override
   String get onBoardingDnaHolo => "assets/images/on_boarding_dna_holo.svg";
+
+  @override
+  String get cycloniteGeometricStructure => "assets/images/cyclonite_geometric_structure.png";
 }

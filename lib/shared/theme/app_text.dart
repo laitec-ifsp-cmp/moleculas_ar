@@ -20,4 +20,9 @@ extension TextExt on Text {
       Text(data!, style: AppTheme.textStyles.textFilledButton);
 
   Text get appBarTitle => Text(data!, style: AppTheme.textStyles.appBarTitle);
+
+  Text get moleculeName => Text(data!, style: AppTheme.textStyles.moleculeName);
+
+  Text get moleculeFormula =>
+      Text(data!, style: AppTheme.textStyles.moleculeFormula);
 }

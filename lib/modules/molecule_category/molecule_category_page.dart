@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moleculas_ar/modules/ar_molecule/ar_molecule_page.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
@@ -26,7 +27,17 @@ class MoleculeCategoryPage extends StatelessWidget {
                 imagePath: AppTheme.images.iconSingleMolecule,
                 title: "Ciclonita",
                 subTitle: "C3H6N6O6",
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => ArMoleculePage(
+                        moleculeName: "Ciclonita",
+                        moleculeFormula: "C3H6N6O6",
+                      ),
+                    ),
+                  );
+                },
               ),
               SizedBox(height: 20),
               IconTextOutlinedButtonWidget(
