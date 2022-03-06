@@ -4,13 +4,15 @@ import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class IconTextOutlinedButtonWidget extends StatelessWidget {
   final String imagePath;
-  final String label;
+  final String title;
+  final String? subTitle;
   final VoidCallback onPressed;
 
   const IconTextOutlinedButtonWidget({
     Key? key,
     required this.imagePath,
-    required this.label,
+    required this.title,
+    this.subTitle,
     required this.onPressed,
   }) : super(key: key);
 
@@ -18,13 +20,20 @@ class IconTextOutlinedButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return OutlinedButton(
       onPressed: onPressed,
-      child: Row(
-        children: [
-          Image.asset(imagePath, height: 40, width: 40),
-          SizedBox(width: 20),
-          Text(label).itemTitle
-        ],
-      ),
+      child: Row(children: [
+        Image.asset(imagePath, height: 40, width: 40),
+        SizedBox(width: 20),
+        RichText(
+          text: TextSpan(children: <TextSpan>[
+            TextSpan(text: title, style: AppTheme.textStyles.itemTitle),
+            if (subTitle != null)
+              TextSpan(
+                text: "\n$subTitle",
+                style: AppTheme.textStyles.itemSubTitle,
+              ),
+          ]),
+        ),
+      ]),
       style: OutlinedButton.styleFrom(
         padding: EdgeInsets.all(20),
         fixedSize: Size(double.maxFinite, 80),

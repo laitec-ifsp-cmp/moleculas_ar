@@ -16,7 +16,7 @@ class HomeAboutPage extends StatelessWidget {
           children: [
             IconTextOutlinedButtonWidget(
               imagePath: AppTheme.images.iconAboutBook,
-              label: "eBook",
+              title: "eBook",
               onPressed: () {
                 goToAboutPage(
                   context: context,
@@ -33,7 +33,7 @@ class HomeAboutPage extends StatelessWidget {
             SizedBox(height: 20),
             IconTextOutlinedButtonWidget(
               imagePath: AppTheme.images.iconAboutTargets,
-              label: "Targets",
+              title: "Targets",
               onPressed: () {
                 goToAboutPage(
                   context: context,
@@ -50,13 +50,13 @@ class HomeAboutPage extends StatelessWidget {
             SizedBox(height: 20),
             IconTextOutlinedButtonWidget(
               imagePath: AppTheme.images.iconAbout,
-              label: "Sobre",
+              title: "Sobre",
               onPressed: () {},
             ),
             SizedBox(height: 20),
             IconTextOutlinedButtonWidget(
               imagePath: AppTheme.images.iconAboutFeedback,
-              label: "Feedbacks",
+              title: "Feedbacks",
               onPressed: () {
                 goToAboutPage(
                   context: context,

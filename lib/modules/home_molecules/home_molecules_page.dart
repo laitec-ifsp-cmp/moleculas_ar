@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moleculas_ar/modules/molecule_category/molecule_category_page.dart';
 
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
@@ -17,19 +18,28 @@ class HomeMoleculesPage extends StatelessWidget {
           children: [
             IconTextOutlinedButtonWidget(
               imagePath: AppTheme.images.iconThreeMolecules,
-              label: "Geometria Molecular",
-              onPressed: () {},
+              title: "Geometria Molecular",
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => MoleculeCategoryPage(
+                      appBarTitle: "Geometria Molecular",
+                    ),
+                  ),
+                );
+              },
             ),
             SizedBox(height: 20),
             IconTextOutlinedButtonWidget(
               imagePath: AppTheme.images.iconSingleMolecule,
-              label: "Isomeria Óptica",
+              title: "Isomeria Óptica",
               onPressed: () {},
             ),
             SizedBox(height: 20),
             IconTextOutlinedButtonWidget(
               imagePath: AppTheme.images.iconDnaMolecule,
-              label: "DNA e RNA",
+              title: "DNA e RNA",
               onPressed: () {},
             ),
           ],

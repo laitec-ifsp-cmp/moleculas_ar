@@ -27,32 +27,20 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
         title: Text((_currentPage == 0) ? "Moléculas" : "Sobre"),
         titleTextStyle: AppTheme.textStyles.homeTitle,
       ),
-      body: Stack(
-        children: [
-          PageView(
-            physics: BouncingScrollPhysics(),
-            controller: _pageController,
-            onPageChanged: (int newPage) {
-              setState(() {
-                _currentPage = newPage;
-              });
-            },
-            children: const [
-              HomeMoleculesPage(),
-              HomeAboutPage(),
-            ],
-          ),
-          GradientMarginWidget(
-            top: 0,
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-          GradientMarginWidget(
-            bottom: 0,
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-        ],
+      body: BodyGradientMarginWidget(
+        child: PageView(
+          physics: BouncingScrollPhysics(),
+          controller: _pageController,
+          onPageChanged: (int newPage) {
+            setState(() {
+              _currentPage = newPage;
+            });
+          },
+          children: const [
+            HomeMoleculesPage(),
+            HomeAboutPage(),
+          ],
+        ),
       ),
       bottomNavigationBar: Container(
         height: 100,

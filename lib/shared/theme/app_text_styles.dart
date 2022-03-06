@@ -11,8 +11,7 @@ abstract class IAppTextStyles {
   TextStyle get homeTitle;
   TextStyle get appBarTitle;
   TextStyle get itemTitle;
-  TextStyle get subItemTitle;
-  TextStyle get subItemSummary;
+  TextStyle get itemSubTitle;
   TextStyle get moleculeName;
   TextStyle get moleculeFormula;
   TextStyle get textFilledButton;
@@ -69,14 +68,7 @@ class AppTextStyles implements IAppTextStyles {
       );
 
   @override
-  TextStyle get subItemTitle => GoogleFonts.poppins(
-        fontSize: 14,
-        color: AppTheme.colors.textPrimary,
-        fontWeight: FontWeight.bold,
-      );
-
-  @override
-  TextStyle get subItemSummary => GoogleFonts.poppins(
+  TextStyle get itemSubTitle => GoogleFonts.poppins(
         fontSize: 12,
         color: AppTheme.colors.oceanGreen,
         fontWeight: FontWeight.w600, // Semi-bold
