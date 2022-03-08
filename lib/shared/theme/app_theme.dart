@@ -1,5 +1,4 @@
 import 'app_colors.dart';
-import 'app_images.dart';
 import 'app_text_styles.dart';
 
 export 'app_text.dart';
@@ -12,7 +11,4 @@ class AppTheme {
 
   final _textStyles = AppTextStyles();
   static AppTextStyles get textStyles => instance._textStyles;
-
-  final _appImages = AppImages();
-  static AppImages get images => instance._appImages;
 }

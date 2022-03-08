@@ -1,5 +1,6 @@
 import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 import 'widgets/on_boarding_info/on_boarding_info_widget.dart';
@@ -29,10 +30,11 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             onPressed: () {
               Navigator.pushReplacementNamed(context, "/home_navigation");
             },
-            child: Text("Pular".toUpperCase()).jumpOnBoarding,
+            child: Text((AppRes.strings.jump).toUpperCase()).jumpOnBoarding,
             style: TextButton.styleFrom(
               primary: AppTheme.colors.primaryLight,
-              padding: EdgeInsets.symmetric(horizontal: 24),
+              padding: EdgeInsets.symmetric(
+                  horizontal: AppRes.dimens.appHorizontalMargin),
             ),
           ),
         ],
@@ -47,29 +49,30 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         },
         children: [
           // TODO: Update on boarding information with final content.
+          // TODO - Strings: Strings of on boarding will be set after definitions.
           OnBoardingInfoWidget(
-            image: AppTheme.images.onBoardingDna,
+            image: AppRes.images.onBoardingDna,
             title: "Introdução",
-            summary: "Lorem ipsum dolor sit amet, consectetur adipiscing "
-                "elit, sed do eiusmod tempor incididunt ut labore et dolore",
+            summary: AppRes.strings.loremIpsum,
           ),
           OnBoardingInfoWidget(
-            image: AppTheme.images.onBoardingDna3d,
+            image: AppRes.images.onBoardingDna3d,
             title: "Introdução",
-            summary: "Lorem ipsum dolor sit amet, consectetur adipiscing "
-                "elit, sed do eiusmod tempor incididunt ut labore et dolore",
+            summary: AppRes.strings.loremIpsum,
           ),
           OnBoardingInfoWidget(
-            image: AppTheme.images.onBoardingDnaHolo,
+            image: AppRes.images.onBoardingDnaHolo,
             title: "Introdução",
-            summary: "Lorem ipsum dolor sit amet, consectetur adipiscing "
-                "elit, sed do eiusmod tempor incididunt ut labore et dolore",
+            summary: AppRes.strings.loremIpsum,
           ),
         ],
       ),
       bottomNavigationBar: Container(
         height: 60,
-        margin: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+        margin: EdgeInsets.symmetric(
+          vertical: AppRes.dimens.defaultVerticalMargin,
+          horizontal: AppRes.dimens.appHorizontalMargin,
+        ),
         alignment: Alignment.topCenter,
         child: ProgressBarWidget(
           totalPage: _numPages,

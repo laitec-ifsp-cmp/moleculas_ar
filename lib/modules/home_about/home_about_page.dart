@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:moleculas_ar/modules/about/about_page.dart';
-import 'package:moleculas_ar/shared/theme/app_theme.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
 class HomeAboutPage extends StatelessWidget {
@@ -11,61 +11,58 @@ class HomeAboutPage extends StatelessWidget {
     return SingleChildScrollView(
       physics: BouncingScrollPhysics(),
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 30),
+        padding: EdgeInsets.symmetric(
+          vertical: AppRes.dimens.largeMargin,
+          horizontal: AppRes.dimens.appHorizontalMargin,
+        ),
         child: Column(
           children: [
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconAboutBook,
-              title: "eBook",
+              imagePath: AppRes.images.iconAboutBook,
+              title: AppRes.strings.eBook,
               onPressed: () {
                 goToAboutPage(
                   context: context,
-                  imagePath: AppTheme.images.aboutEBook,
-                  title: "Acesse o nosso eBook",
+                  imagePath: AppRes.images.aboutEBook,
+                  title: AppRes.strings.accessEBook,
                   // TODO: Update summary and onPressedButton of eBook option
-                  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing"
-                      " elit, sed do eiusmod tempor incididunt ut labore et "
-                      "dolore",
+                  summary: AppRes.strings.loremIpsum,
                   onPressedButton: () {},
                 );
               },
             ),
-            SizedBox(height: 20),
+            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconAboutTargets,
-              title: "Targets",
+              imagePath: AppRes.images.iconAboutTargets,
+              title: AppRes.strings.targets,
               onPressed: () {
                 goToAboutPage(
                   context: context,
-                  imagePath: AppTheme.images.aboutTargets,
-                  title: "Baixe nossos targets",
+                  imagePath: AppRes.images.aboutTargets,
+                  title: AppRes.strings.downloadTargets,
                   // TODO: Update summary and onPressedButton of Targets option
-                  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing"
-                      " elit, sed do eiusmod tempor incididunt ut labore et "
-                      "dolore",
+                  summary: AppRes.strings.loremIpsum,
                   onPressedButton: () {},
                 );
               },
             ),
-            SizedBox(height: 20),
+            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconAbout,
-              title: "Sobre",
+              imagePath: AppRes.images.iconAbout,
+              title: AppRes.strings.about,
               onPressed: () {},
             ),
-            SizedBox(height: 20),
+            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconAboutFeedback,
-              title: "Feedbacks",
+              imagePath: AppRes.images.iconAboutFeedback,
+              title: AppRes.strings.feedback,
               onPressed: () {
                 goToAboutPage(
                   context: context,
-                  imagePath: AppTheme.images.aboutFeedback,
+                  imagePath: AppRes.images.aboutFeedback,
                   // TODO: Update summary and onPressedButton of Feedback option
-                  title: "Avalie o aplicativo",
-                  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing"
-                      " elit, sed do eiusmod tempor incididunt ut labore et "
-                      "dolore ",
+                  title: AppRes.strings.giveFeedback,
+                  summary: AppRes.strings.loremIpsum,
                   onPressedButton: () {},
                 );
               },

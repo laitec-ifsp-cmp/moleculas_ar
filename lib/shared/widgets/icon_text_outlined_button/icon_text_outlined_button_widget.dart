@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
@@ -22,7 +23,7 @@ class IconTextOutlinedButtonWidget extends StatelessWidget {
       onPressed: onPressed,
       child: Row(children: [
         Image.asset(imagePath, height: 40, width: 40),
-        SizedBox(width: 20),
+        SizedBox(width: AppRes.dimens.defaultVerticalMargin),
         RichText(
           text: TextSpan(children: <TextSpan>[
             TextSpan(text: title, style: AppTheme.textStyles.itemTitle),

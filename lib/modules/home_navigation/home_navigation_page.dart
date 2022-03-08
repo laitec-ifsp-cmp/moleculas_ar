@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 import '../home_about/home_about_page.dart';
 import '../home_molecules/home_molecules_page.dart';
 import 'widgets/home_bottom_nav/home_bottom_nav_widget.dart';
@@ -21,10 +22,12 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
     return Scaffold(
       backgroundColor: AppTheme.colors.background,
       appBar: AppBar(
-        toolbarHeight: 104,
+        toolbarHeight: AppRes.dimens.appBarHeight,
         backgroundColor: AppTheme.colors.background,
         elevation: 0,
-        title: Text((_currentPage == 0) ? "Moléculas" : "Sobre"),
+        title: Text((_currentPage == 0)
+            ? AppRes.strings.molecules
+            : AppRes.strings.about),
         titleTextStyle: AppTheme.textStyles.homeTitle,
       ),
       body: BodyGradientMarginWidget(
@@ -44,7 +47,10 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
       ),
       bottomNavigationBar: Container(
         height: 100,
-        margin: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+        margin: EdgeInsets.symmetric(
+          vertical: AppRes.dimens.defaultVerticalMargin,
+          horizontal: AppRes.dimens.appHorizontalMargin,
+        ),
         child: HomeBottomNavWidget(
           currentPage: _currentPage,
           onTapMolecules: () {

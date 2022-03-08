@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/app_bar/app_bar_widget.dart';
@@ -24,19 +25,22 @@ class AboutPage extends StatelessWidget {
       backgroundColor: AppTheme.colors.background,
       appBar: AppBarWidget(),
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 24),
+        padding: EdgeInsets.symmetric(
+          vertical: AppRes.dimens.hugeMargin,
+          horizontal: AppRes.dimens.appHorizontalMargin,
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SvgPicture.asset(imagePath),
-            SizedBox(height: 40),
+            SizedBox(height: AppRes.dimens.hugeMargin),
             Text(title).title,
-            SizedBox(height: 20),
+            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
             Text(summary).summary,
-            SizedBox(height: 40),
+            SizedBox(height: AppRes.dimens.hugeMargin),
             ElevatedButton(
               onPressed: onPressedButton,
-              child: Text("Clique aqui").textFilledButton,
+              child: Text(AppRes.strings.clickHere).textFilledButton,
               style: ElevatedButton.styleFrom(
                 elevation: 5,
                 shape: RoundedRectangleBorder(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class MoleculeInfoSheetWidget extends StatelessWidget {
@@ -31,7 +32,10 @@ class MoleculeInfoSheetWidget extends StatelessWidget {
             physics: ClampingScrollPhysics(),
             controller: scrollController,
             child: Padding(
-              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+              padding: EdgeInsets.symmetric(
+                vertical: AppRes.dimens.defaultVerticalMargin,
+                horizontal: AppRes.dimens.appHorizontalMargin,
+              ),
               child: Column(children: [
                 Container(
                   height: 5,
@@ -41,11 +45,11 @@ class MoleculeInfoSheetWidget extends StatelessWidget {
                     borderRadius: BorderRadius.circular(5),
                   ),
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: AppRes.dimens.defaultVerticalMargin),
                 Text(moleculeName).moleculeName,
                 Text(moleculeFormula).moleculeFormula,
-                SizedBox(height: 30),
-                Image.asset(AppTheme.images.cycloniteGeometricStructure)
+                SizedBox(height: AppRes.dimens.largeMargin),
+                Image.asset(AppRes.images.cycloniteGeometricStructure)
               ]),
             ),
           ),

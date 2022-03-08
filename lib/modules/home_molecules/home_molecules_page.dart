@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:moleculas_ar/modules/molecule_category/molecule_category_page.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 
-import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
 class HomeMoleculesPage extends StatelessWidget {
@@ -12,12 +12,16 @@ class HomeMoleculesPage extends StatelessWidget {
     return SingleChildScrollView(
       physics: BouncingScrollPhysics(),
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 30),
+        padding: EdgeInsets.symmetric(
+          vertical: AppRes.dimens.largeMargin,
+          horizontal: AppRes.dimens.appHorizontalMargin,
+        ),
         // TODO: Show buttons by a MoleculesCategory list
+        // TODO - Strings: The MoleculesCategory title string will be get from the list
         child: Column(
           children: [
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconThreeMolecules,
+              imagePath: AppRes.images.iconThreeMolecules,
               title: "Geometria Molecular",
               onPressed: () {
                 Navigator.push(
@@ -30,15 +34,15 @@ class HomeMoleculesPage extends StatelessWidget {
                 );
               },
             ),
-            SizedBox(height: 20),
+            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconSingleMolecule,
+              imagePath: AppRes.images.iconSingleMolecule,
               title: "Isomeria Óptica",
               onPressed: () {},
             ),
-            SizedBox(height: 20),
+            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconDnaMolecule,
+              imagePath: AppRes.images.iconDnaMolecule,
               title: "DNA e RNA",
               onPressed: () {},
             ),
