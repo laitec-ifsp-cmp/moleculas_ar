@@ -21,7 +21,10 @@ class MoleculeCategoryPage extends StatelessWidget {
         child: SingleChildScrollView(
           physics: BouncingScrollPhysics(),
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 30),
+            padding: EdgeInsets.symmetric(
+              horizontal: AppRes.dimens.appHorizontalMargin,
+              vertical: AppRes.dimens.largeMargin,
+            ),
             // TODO: Show buttons by a Molecules list
             // TODO - Strings: The Molecules name and formula string will be get from the list
             child: Column(children: [
@@ -41,14 +44,14 @@ class MoleculeCategoryPage extends StatelessWidget {
                   );
                 },
               ),
-              SizedBox(height: 20),
+              SizedBox(height: AppRes.dimens.defaultVerticalMargin),
               IconTextOutlinedButtonWidget(
                 imagePath: AppRes.images.iconSingleMolecule,
                 title: "Água",
                 subTitle: "H20",
                 onPressed: () {},
               ),
-              SizedBox(height: 20),
+              SizedBox(height: AppRes.dimens.defaultVerticalMargin),
               IconTextOutlinedButtonWidget(
                 imagePath: AppRes.images.iconSingleMolecule,
                 title: "Hexafluoreto de Enxofre",

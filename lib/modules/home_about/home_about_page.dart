@@ -11,7 +11,10 @@ class HomeAboutPage extends StatelessWidget {
     return SingleChildScrollView(
       physics: BouncingScrollPhysics(),
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 30),
+        padding: EdgeInsets.symmetric(
+          vertical: AppRes.dimens.largeMargin,
+          horizontal: AppRes.dimens.appHorizontalMargin,
+        ),
         child: Column(
           children: [
             IconTextOutlinedButtonWidget(
@@ -28,7 +31,7 @@ class HomeAboutPage extends StatelessWidget {
                 );
               },
             ),
-            SizedBox(height: 20),
+            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAboutTargets,
               title: AppRes.strings.targets,
@@ -43,13 +46,13 @@ class HomeAboutPage extends StatelessWidget {
                 );
               },
             ),
-            SizedBox(height: 20),
+            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAbout,
               title: AppRes.strings.about,
               onPressed: () {},
             ),
-            SizedBox(height: 20),
+            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAboutFeedback,
               title: AppRes.strings.feedback,

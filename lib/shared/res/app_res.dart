@@ -1,5 +1,6 @@
 import 'package:moleculas_ar/shared/res/app_strings/app_strings.dart';
 
+import 'app_dimens/app_dimens.dart';
 import 'app_images/app_images.dart';
 
 class AppRes {
@@ -10,4 +11,7 @@ class AppRes {
 
   final _appStrings = AppStrings();
   static AppStrings get strings => instance._appStrings;
+
+  final _appDimens = AppDimens();
+  static AppDimens get dimens => instance._appDimens;
 }

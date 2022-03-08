@@ -33,7 +33,8 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             child: Text((AppRes.strings.jump).toUpperCase()).jumpOnBoarding,
             style: TextButton.styleFrom(
               primary: AppTheme.colors.primaryLight,
-              padding: EdgeInsets.symmetric(horizontal: 24),
+              padding: EdgeInsets.symmetric(
+                  horizontal: AppRes.dimens.appHorizontalMargin),
             ),
           ),
         ],
@@ -68,7 +69,10 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
       ),
       bottomNavigationBar: Container(
         height: 60,
-        margin: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+        margin: EdgeInsets.symmetric(
+          vertical: AppRes.dimens.defaultVerticalMargin,
+          horizontal: AppRes.dimens.appHorizontalMargin,
+        ),
         alignment: Alignment.topCenter,
         child: ProgressBarWidget(
           totalPage: _numPages,

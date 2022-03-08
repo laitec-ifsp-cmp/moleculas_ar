@@ -22,7 +22,7 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
     return Scaffold(
       backgroundColor: AppTheme.colors.background,
       appBar: AppBar(
-        toolbarHeight: 104,
+        toolbarHeight: AppRes.dimens.appBarHeight,
         backgroundColor: AppTheme.colors.background,
         elevation: 0,
         title: Text((_currentPage == 0)
@@ -47,7 +47,10 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
       ),
       bottomNavigationBar: Container(
         height: 100,
-        margin: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+        margin: EdgeInsets.symmetric(
+          vertical: AppRes.dimens.defaultVerticalMargin,
+          horizontal: AppRes.dimens.appHorizontalMargin,
+        ),
         child: HomeBottomNavWidget(
           currentPage: _currentPage,
           onTapMolecules: () {

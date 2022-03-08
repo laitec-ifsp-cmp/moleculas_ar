@@ -12,7 +12,10 @@ class HomeMoleculesPage extends StatelessWidget {
     return SingleChildScrollView(
       physics: BouncingScrollPhysics(),
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 30),
+        padding: EdgeInsets.symmetric(
+          vertical: AppRes.dimens.largeMargin,
+          horizontal: AppRes.dimens.appHorizontalMargin,
+        ),
         // TODO: Show buttons by a MoleculesCategory list
         // TODO - Strings: The MoleculesCategory title string will be get from the list
         child: Column(
@@ -31,13 +34,13 @@ class HomeMoleculesPage extends StatelessWidget {
                 );
               },
             ),
-            SizedBox(height: 20),
+            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconSingleMolecule,
               title: "Isomeria Óptica",
               onPressed: () {},
             ),
-            SizedBox(height: 20),
+            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconDnaMolecule,
               title: "DNA e RNA",
