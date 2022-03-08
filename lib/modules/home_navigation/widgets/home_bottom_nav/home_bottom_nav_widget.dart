@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
+import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class HomeBottomNavWidget extends StatelessWidget {
@@ -24,7 +26,7 @@ class HomeBottomNavWidget extends StatelessWidget {
         IconButton(
           onPressed: onTapMolecules,
           icon: SvgPicture.asset(
-            AppTheme.images.iconMolecule,
+            AppRes.images.iconMolecule,
             color: (currentPage == 0)
                 ? AppTheme.colors.primary
                 : AppTheme.colors.primaryLight,
@@ -33,7 +35,7 @@ class HomeBottomNavWidget extends StatelessWidget {
         ),
         OutlinedButton(
           onPressed: onTapArMolecules,
-          child: SvgPicture.asset(AppTheme.images.iconTarget),
+          child: SvgPicture.asset(AppRes.images.iconTarget),
           style: OutlinedButton.styleFrom(
             backgroundColor: AppTheme.colors.primary,
             shadowColor: AppTheme.colors.primaryLight,
@@ -44,7 +46,7 @@ class HomeBottomNavWidget extends StatelessWidget {
         IconButton(
           onPressed: onTapSettings,
           icon: SvgPicture.asset(
-            AppTheme.images.iconGear,
+            AppRes.images.iconGear,
             color: (currentPage == 1)
                 ? AppTheme.colors.primary
                 : AppTheme.colors.primaryLight,

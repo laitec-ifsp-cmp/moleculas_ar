@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:moleculas_ar/modules/about/about_page.dart';
-import 'package:moleculas_ar/shared/theme/app_theme.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
 class HomeAboutPage extends StatelessWidget {
@@ -15,12 +15,12 @@ class HomeAboutPage extends StatelessWidget {
         child: Column(
           children: [
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconAboutBook,
+              imagePath: AppRes.images.iconAboutBook,
               title: "eBook",
               onPressed: () {
                 goToAboutPage(
                   context: context,
-                  imagePath: AppTheme.images.aboutEBook,
+                  imagePath: AppRes.images.aboutEBook,
                   title: "Acesse o nosso eBook",
                   // TODO: Update summary and onPressedButton of eBook option
                   summary: "Lorem ipsum dolor sit amet, consectetur adipiscing"
@@ -32,12 +32,12 @@ class HomeAboutPage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconAboutTargets,
+              imagePath: AppRes.images.iconAboutTargets,
               title: "Targets",
               onPressed: () {
                 goToAboutPage(
                   context: context,
-                  imagePath: AppTheme.images.aboutTargets,
+                  imagePath: AppRes.images.aboutTargets,
                   title: "Baixe nossos targets",
                   // TODO: Update summary and onPressedButton of Targets option
                   summary: "Lorem ipsum dolor sit amet, consectetur adipiscing"
@@ -49,18 +49,18 @@ class HomeAboutPage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconAbout,
+              imagePath: AppRes.images.iconAbout,
               title: "Sobre",
               onPressed: () {},
             ),
             SizedBox(height: 20),
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconAboutFeedback,
+              imagePath: AppRes.images.iconAboutFeedback,
               title: "Feedbacks",
               onPressed: () {
                 goToAboutPage(
                   context: context,
-                  imagePath: AppTheme.images.aboutFeedback,
+                  imagePath: AppRes.images.aboutFeedback,
                   // TODO: Update summary and onPressedButton of Feedback option
                   title: "Avalie o aplicativo",
                   summary: "Lorem ipsum dolor sit amet, consectetur adipiscing"

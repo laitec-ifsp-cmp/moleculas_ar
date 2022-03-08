@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class BackButtonWidget extends StatelessWidget {
@@ -13,7 +15,7 @@ class BackButtonWidget extends StatelessWidget {
         Navigator.pop(context);
       },
       child: SvgPicture.asset(
-        AppTheme.images.arrowLeft,
+        AppRes.images.iconArrowLeft,
         width: 20,
         height: 20,
       ),

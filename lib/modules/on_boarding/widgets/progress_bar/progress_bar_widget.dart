@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class ProgressBarWidget extends StatelessWidget {
@@ -25,7 +26,7 @@ class ProgressBarWidget extends StatelessWidget {
             ? ElevatedButton(
                 onPressed: onBackPressed,
                 child: SvgPicture.asset(
-                  AppTheme.images.arrowLeft,
+                  AppRes.images.iconArrowLeft,
                   width: 20,
                   height: 20,
                 ),
@@ -61,7 +62,7 @@ class ProgressBarWidget extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: onNextPressed,
-          child: SvgPicture.asset(AppTheme.images.arrowRight),
+          child: SvgPicture.asset(AppRes.images.iconArrowRight),
           style: ElevatedButton.styleFrom(
             elevation: 1,
             shape: CircleBorder(),

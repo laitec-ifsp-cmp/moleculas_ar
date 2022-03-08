@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:moleculas_ar/modules/ar_molecule/ar_molecule_page.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
@@ -24,7 +25,7 @@ class MoleculeCategoryPage extends StatelessWidget {
             // TODO: Show buttons by a Molecules list
             child: Column(children: [
               IconTextOutlinedButtonWidget(
-                imagePath: AppTheme.images.iconSingleMolecule,
+                imagePath: AppRes.images.iconSingleMolecule,
                 title: "Ciclonita",
                 subTitle: "C3H6N6O6",
                 onPressed: () {
@@ -41,14 +42,14 @@ class MoleculeCategoryPage extends StatelessWidget {
               ),
               SizedBox(height: 20),
               IconTextOutlinedButtonWidget(
-                imagePath: AppTheme.images.iconSingleMolecule,
+                imagePath: AppRes.images.iconSingleMolecule,
                 title: "Água",
                 subTitle: "H20",
                 onPressed: () {},
               ),
               SizedBox(height: 20),
               IconTextOutlinedButtonWidget(
-                imagePath: AppTheme.images.iconSingleMolecule,
+                imagePath: AppRes.images.iconSingleMolecule,
                 title: "Hexafluoreto de Enxofre",
                 subTitle: "SF6",
                 onPressed: () {},

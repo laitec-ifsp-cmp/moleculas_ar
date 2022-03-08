@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:moleculas_ar/modules/molecule_category/molecule_category_page.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 
-import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
 class HomeMoleculesPage extends StatelessWidget {
@@ -17,7 +17,7 @@ class HomeMoleculesPage extends StatelessWidget {
         child: Column(
           children: [
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconThreeMolecules,
+              imagePath: AppRes.images.iconThreeMolecules,
               title: "Geometria Molecular",
               onPressed: () {
                 Navigator.push(
@@ -32,13 +32,13 @@ class HomeMoleculesPage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconSingleMolecule,
+              imagePath: AppRes.images.iconSingleMolecule,
               title: "Isomeria Óptica",
               onPressed: () {},
             ),
             SizedBox(height: 20),
             IconTextOutlinedButtonWidget(
-              imagePath: AppTheme.images.iconDnaMolecule,
+              imagePath: AppRes.images.iconDnaMolecule,
               title: "DNA e RNA",
               onPressed: () {},
             ),

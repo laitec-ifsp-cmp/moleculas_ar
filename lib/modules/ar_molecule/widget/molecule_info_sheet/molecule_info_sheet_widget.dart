@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class MoleculeInfoSheetWidget extends StatelessWidget {
@@ -45,7 +46,7 @@ class MoleculeInfoSheetWidget extends StatelessWidget {
                 Text(moleculeName).moleculeName,
                 Text(moleculeFormula).moleculeFormula,
                 SizedBox(height: 30),
-                Image.asset(AppTheme.images.cycloniteGeometricStructure)
+                Image.asset(AppRes.images.cycloniteGeometricStructure)
               ]),
             ),
           ),

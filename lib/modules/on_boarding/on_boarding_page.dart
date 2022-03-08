@@ -1,5 +1,6 @@
 import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 import 'widgets/on_boarding_info/on_boarding_info_widget.dart';
@@ -48,19 +49,19 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         children: [
           // TODO: Update on boarding information with final content.
           OnBoardingInfoWidget(
-            image: AppTheme.images.onBoardingDna,
+            image: AppRes.images.onBoardingDna,
             title: "Introdução",
             summary: "Lorem ipsum dolor sit amet, consectetur adipiscing "
                 "elit, sed do eiusmod tempor incididunt ut labore et dolore",
           ),
           OnBoardingInfoWidget(
-            image: AppTheme.images.onBoardingDna3d,
+            image: AppRes.images.onBoardingDna3d,
             title: "Introdução",
             summary: "Lorem ipsum dolor sit amet, consectetur adipiscing "
                 "elit, sed do eiusmod tempor incididunt ut labore et dolore",
           ),
           OnBoardingInfoWidget(
-            image: AppTheme.images.onBoardingDnaHolo,
+            image: AppRes.images.onBoardingDnaHolo,
             title: "Introdução",
             summary: "Lorem ipsum dolor sit amet, consectetur adipiscing "
                 "elit, sed do eiusmod tempor incididunt ut labore et dolore",
