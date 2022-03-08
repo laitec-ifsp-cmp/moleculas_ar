@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 import '../home_about/home_about_page.dart';
 import '../home_molecules/home_molecules_page.dart';
 import 'widgets/home_bottom_nav/home_bottom_nav_widget.dart';
@@ -24,7 +25,9 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
         toolbarHeight: 104,
         backgroundColor: AppTheme.colors.background,
         elevation: 0,
-        title: Text((_currentPage == 0) ? "Moléculas" : "Sobre"),
+        title: Text((_currentPage == 0)
+            ? AppRes.strings.molecules
+            : AppRes.strings.about),
         titleTextStyle: AppTheme.textStyles.homeTitle,
       ),
       body: BodyGradientMarginWidget(

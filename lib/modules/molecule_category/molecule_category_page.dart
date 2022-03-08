@@ -23,6 +23,7 @@ class MoleculeCategoryPage extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 30),
             // TODO: Show buttons by a Molecules list
+            // TODO - Strings: The Molecules name and formula string will be get from the list
             child: Column(children: [
               IconTextOutlinedButtonWidget(
                 imagePath: AppRes.images.iconSingleMolecule,

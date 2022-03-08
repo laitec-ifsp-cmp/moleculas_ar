@@ -14,6 +14,7 @@ class HomeMoleculesPage extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24, vertical: 30),
         // TODO: Show buttons by a MoleculesCategory list
+        // TODO - Strings: The MoleculesCategory title string will be get from the list
         child: Column(
           children: [
             IconTextOutlinedButtonWidget(

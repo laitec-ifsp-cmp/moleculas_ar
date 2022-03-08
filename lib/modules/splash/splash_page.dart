@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class SplashPage extends StatelessWidget {
@@ -19,7 +21,7 @@ class SplashPage extends StatelessWidget {
             children: [
               Image.asset("assets/images/logo.png"),
               SizedBox(height: 20),
-              Text("Moléculas AR").splashText,
+              Text(AppRes.strings.appName).splashText,
             ],
           ),
         ),

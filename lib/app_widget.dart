@@ -4,6 +4,7 @@ import 'package:moleculas_ar/modules/ar_molecule_target/ar_molecule_target_page.
 import 'modules/home_navigation/home_navigation_page.dart';
 import 'modules/on_boarding/on_boarding_page.dart';
 import 'modules/splash/splash_page.dart';
+import 'shared/res/app_res.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);
@@ -11,7 +12,7 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Moléculas AR",
+      title: AppRes.strings.appName,
       theme: ThemeData(primarySwatch: Colors.deepPurple),
       debugShowCheckedModeBanner: false,
       initialRoute: "/splash",

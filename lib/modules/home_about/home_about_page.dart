@@ -16,16 +16,14 @@ class HomeAboutPage extends StatelessWidget {
           children: [
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAboutBook,
-              title: "eBook",
+              title: AppRes.strings.eBook,
               onPressed: () {
                 goToAboutPage(
                   context: context,
                   imagePath: AppRes.images.aboutEBook,
-                  title: "Acesse o nosso eBook",
+                  title: AppRes.strings.accessEBook,
                   // TODO: Update summary and onPressedButton of eBook option
-                  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing"
-                      " elit, sed do eiusmod tempor incididunt ut labore et "
-                      "dolore",
+                  summary: AppRes.strings.loremIpsum,
                   onPressedButton: () {},
                 );
               },
@@ -33,16 +31,14 @@ class HomeAboutPage extends StatelessWidget {
             SizedBox(height: 20),
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAboutTargets,
-              title: "Targets",
+              title: AppRes.strings.targets,
               onPressed: () {
                 goToAboutPage(
                   context: context,
                   imagePath: AppRes.images.aboutTargets,
-                  title: "Baixe nossos targets",
+                  title: AppRes.strings.downloadTargets,
                   // TODO: Update summary and onPressedButton of Targets option
-                  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing"
-                      " elit, sed do eiusmod tempor incididunt ut labore et "
-                      "dolore",
+                  summary: AppRes.strings.loremIpsum,
                   onPressedButton: () {},
                 );
               },
@@ -50,22 +46,20 @@ class HomeAboutPage extends StatelessWidget {
             SizedBox(height: 20),
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAbout,
-              title: "Sobre",
+              title: AppRes.strings.about,
               onPressed: () {},
             ),
             SizedBox(height: 20),
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAboutFeedback,
-              title: "Feedbacks",
+              title: AppRes.strings.feedback,
               onPressed: () {
                 goToAboutPage(
                   context: context,
                   imagePath: AppRes.images.aboutFeedback,
                   // TODO: Update summary and onPressedButton of Feedback option
-                  title: "Avalie o aplicativo",
-                  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing"
-                      " elit, sed do eiusmod tempor incididunt ut labore et "
-                      "dolore ",
+                  title: AppRes.strings.giveFeedback,
+                  summary: AppRes.strings.loremIpsum,
                   onPressedButton: () {},
                 );
               },

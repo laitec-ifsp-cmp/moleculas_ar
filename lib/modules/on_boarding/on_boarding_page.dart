@@ -30,7 +30,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             onPressed: () {
               Navigator.pushReplacementNamed(context, "/home_navigation");
             },
-            child: Text("Pular".toUpperCase()).jumpOnBoarding,
+            child: Text((AppRes.strings.jump).toUpperCase()).jumpOnBoarding,
             style: TextButton.styleFrom(
               primary: AppTheme.colors.primaryLight,
               padding: EdgeInsets.symmetric(horizontal: 24),
@@ -48,23 +48,21 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         },
         children: [
           // TODO: Update on boarding information with final content.
+          // TODO - Strings: Strings of on boarding will be set after definitions.
           OnBoardingInfoWidget(
             image: AppRes.images.onBoardingDna,
             title: "Introdução",
-            summary: "Lorem ipsum dolor sit amet, consectetur adipiscing "
-                "elit, sed do eiusmod tempor incididunt ut labore et dolore",
+            summary: AppRes.strings.loremIpsum,
           ),
           OnBoardingInfoWidget(
             image: AppRes.images.onBoardingDna3d,
             title: "Introdução",
-            summary: "Lorem ipsum dolor sit amet, consectetur adipiscing "
-                "elit, sed do eiusmod tempor incididunt ut labore et dolore",
+            summary: AppRes.strings.loremIpsum,
           ),
           OnBoardingInfoWidget(
             image: AppRes.images.onBoardingDnaHolo,
             title: "Introdução",
-            summary: "Lorem ipsum dolor sit amet, consectetur adipiscing "
-                "elit, sed do eiusmod tempor incididunt ut labore et dolore",
+            summary: AppRes.strings.loremIpsum,
           ),
         ],
       ),

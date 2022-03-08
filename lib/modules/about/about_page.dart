@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:moleculas_ar/shared/res/app_res.dart';
 
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/app_bar/app_bar_widget.dart';
@@ -36,7 +37,7 @@ class AboutPage extends StatelessWidget {
             SizedBox(height: 40),
             ElevatedButton(
               onPressed: onPressedButton,
-              child: Text("Clique aqui").textFilledButton,
+              child: Text(AppRes.strings.clickHere).textFilledButton,
               style: ElevatedButton.styleFrom(
                 elevation: 5,
                 shape: RoundedRectangleBorder(
