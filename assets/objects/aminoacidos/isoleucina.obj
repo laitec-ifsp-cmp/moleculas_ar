@@ -1,6 +1,6 @@
 # Blender v2.83.0 OBJ File: 'Isoleucina.blend'
 # www.blender.org
-mtllib Isoleucina.mtl
+mtllib isoleucina.mtl
 o Shape_Cylinder
 v 0.682360 3.789587 0.139196
 v 0.582166 3.058588 -0.094039

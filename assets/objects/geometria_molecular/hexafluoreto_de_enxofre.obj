@@ -1,6 +1,6 @@
 # Blender v2.83.0 OBJ File: 'SF6.blend'
 # www.blender.org
-mtllib hexafluoreto_de_enxofre .mtl
+mtllib hexafluoreto_de_enxofre.mtl
 o Shape_Cylinder
 v -0.694865 2.931555 -0.548509
 v -1.393477 3.122036 -0.465120
