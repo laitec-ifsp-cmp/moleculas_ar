@@ -63,6 +63,13 @@ flutter:
   assets:
     - assets/images/
 
+    - assets/objects/acidos_nucleicos/
+    - assets/objects/aminoacidos/
+    - assets/objects/geometria_molecular/
+    - assets/objects/isomeria_geometrica/
+    - assets/objects/isomeria_optica/
+    - assets/objects/peptideos/
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
