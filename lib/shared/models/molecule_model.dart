@@ -2,38 +2,36 @@ import 'dart:convert';
 
 class MoleculeModel {
   final String name;
-  final String linearStructure;
+  final String molecularFormula;
   final String objectPath;
   final String iconPath;
-  final String geometricStructureImagePath;
+  final String structuralFormulaImagePath;
 
   MoleculeModel({
     required this.name,
-    required this.linearStructure,
+    required this.molecularFormula,
     required this.objectPath,
     required this.iconPath,
-    required this.geometricStructureImagePath,
+    required this.structuralFormulaImagePath,
   });
 
   Map<String, dynamic> toMap() {
     return {
       'name': name,
-      'linearStructure': linearStructure,
+      'molecularFormula': molecularFormula,
       'objectPath': objectPath,
       'iconPath': iconPath,
-      'geometricStructureImagePath': geometricStructureImagePath,
+      'structuralFormulaImagePath': structuralFormulaImagePath,
     };
   }
 
-  // TODO: Create and select default images for imagePath and geometricStructureImagePath
   factory MoleculeModel.fromMap(Map<String, dynamic> map) {
     return MoleculeModel(
       name: map['name'],
-      linearStructure: map['linearStructure'],
+      molecularFormula: map['molecularFormula'],
       objectPath: map['objectPath'],
-      iconPath: map['iconPath'] /*?? AppRes.images.defaultIconMolecule*/,
-      geometricStructureImagePath: map['geometricStructureImagePath']
-              /*?? AppRes.images.defaultGeometricStructure*/,
+      iconPath: map['iconPath'],
+      structuralFormulaImagePath: map['structuralFormulaImagePath'],
     );
   }
 
