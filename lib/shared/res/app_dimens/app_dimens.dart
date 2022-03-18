@@ -1,6 +1,7 @@
 abstract class IAppDimens {
   double get appBarHeight;
   double get appHorizontalMargin;
+  double get buttonMinHeight;
   double get defaultVerticalMargin;
   double get hugeMargin;
   double get largeMargin;
@@ -12,6 +13,9 @@ class AppDimens implements IAppDimens {
 
   @override
   double get appHorizontalMargin => 24;
+
+  @override
+  double get buttonMinHeight => 80;
 
   @override
   double get defaultVerticalMargin => 20;
