@@ -4,18 +4,18 @@ import 'home_molecules_repository.dart';
 import 'package:moleculas_ar/app_state.dart';
 import 'package:moleculas_ar/shared/models/molecules_category_model.dart';
 
-class HomeMoleculeController {
+class HomeMoleculesController {
   final stateNotifier = ValueNotifier<AppState>(AppState.empty);
   set state(AppState state) => stateNotifier.value = state;
   AppState get state => stateNotifier.value;
 
-  List<MoleculesCategoryModel>? moleculesCategory;
+  List<MoleculesCategoryModel>? moleculesCategories;
 
   final repository = HomeMoleculesRepository();
 
-  void getMoleculesCategory() async {
+  void getMoleculesCategories() async {
     state = AppState.loading;
-    moleculesCategory = await repository.getMoleculesCategory();
+    moleculesCategories = await repository.getMoleculesCategories();
     state = AppState.success;
   }
 }

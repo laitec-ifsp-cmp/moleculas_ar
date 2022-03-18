@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cube/flutter_cube.dart';
 
 import 'widget/molecule_info_sheet/molecule_info_sheet_widget.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
 class ArMoleculePage extends StatelessWidget {
-  final String moleculeName;
-  final String moleculeFormula;
+  final String name;
+  final String formula;
+  final String objectPath;
+  final String structuralFormulaImagePath;
 
   const ArMoleculePage({
     Key? key,
-    required this.moleculeName,
-    required this.moleculeFormula,
+    required this.name,
+    required this.formula,
+    required this.objectPath,
+    required this.structuralFormulaImagePath,
   }) : super(key: key);
 
   @override
@@ -20,10 +25,17 @@ class ArMoleculePage extends StatelessWidget {
       appBar: AppBarWidget(),
       body: Stack(
         children: [
-          Container(color: AppTheme.colors.primary),
+          Container(
+            color: AppTheme.colors.light,
+            child: Cube(onSceneCreated: (scene) {
+              scene.world.add(Object(fileName: objectPath));
+              scene.camera.zoom = 4.5;
+            }),
+          ),
           MoleculeInfoSheetWidget(
-            moleculeName: moleculeName,
-            moleculeFormula: moleculeFormula,
+            moleculeName: name,
+            moleculeFormula: formula,
+            structuralFormulaImagePath: structuralFormulaImagePath,
           )
         ],
       ),

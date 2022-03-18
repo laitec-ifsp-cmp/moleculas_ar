@@ -5,11 +5,13 @@ import 'package:moleculas_ar/shared/theme/app_theme.dart';
 class MoleculeInfoSheetWidget extends StatelessWidget {
   final String moleculeName;
   final String moleculeFormula;
+  final String structuralFormulaImagePath;
 
   const MoleculeInfoSheetWidget({
     Key? key,
     required this.moleculeName,
     required this.moleculeFormula,
+    required this.structuralFormulaImagePath,
   }) : super(key: key);
 
   @override
@@ -18,7 +20,7 @@ class MoleculeInfoSheetWidget extends StatelessWidget {
       initialChildSize: 0.154,
       minChildSize: 0.154,
       // TODO: Make 'maxChildSize' dynamically set by the height of the child.
-      maxChildSize: 0.37,
+      maxChildSize: structuralFormulaImagePath.isNotEmpty ? 0.37 : 0.154,
       builder: (context, scrollController) {
         return Container(
           decoration: BoxDecoration(
@@ -46,10 +48,16 @@ class MoleculeInfoSheetWidget extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: AppRes.dimens.defaultVerticalMargin),
-                Text(moleculeName).moleculeName,
+                Text(
+                  moleculeName,
+                  style: AppTheme.textStyles.moleculeName,
+                  textAlign: TextAlign.center,
+                ),
                 Text(moleculeFormula).moleculeFormula,
-                SizedBox(height: AppRes.dimens.largeMargin),
-                Image.asset(AppRes.images.cycloniteGeometricStructure)
+                if (structuralFormulaImagePath.isNotEmpty)
+                  SizedBox(height: AppRes.dimens.largeMargin),
+                if (structuralFormulaImagePath.isNotEmpty)
+                  Image.asset(structuralFormulaImagePath)
               ]),
             ),
           ),

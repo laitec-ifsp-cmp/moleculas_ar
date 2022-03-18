@@ -167,56 +167,56 @@
       {
         "name": "Acido-trans-butenodioico",
         "molecularFormula": "C4H4O4",
-        "objectPath": "assets/objects/isometria_geometrica/acido-trans-butenodioico.obj",
+        "objectPath": "assets/objects/isomeria_geometrica/acido-trans-butenodioico.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
         "name": "Acido-cis-butenodioico",
         "molecularFormula": "C4H4O4",
-        "objectPath": "assets/objects/isometria_geometrica/acido-cis-butenodioico.obj",
+        "objectPath": "assets/objects/isomeria_geometrica/acido-cis-butenodioico.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
         "name": "Trans-1-cloro-1,2-dimetil-ciclo-pentano",
         "molecularFormula": "C7H13Cl",
-        "objectPath": "assets/objects/isometria_geometrica/trans-1-cloro-1_2-dimetil-ciclo-pentano.obj",
+        "objectPath": "assets/objects/isomeria_geometrica/trans-1-cloro-1_2-dimetil-ciclo-pentano.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
         "name": "Cis-1-cloro-1,2-dimetil-ciclo-pentano",
         "molecularFormula": "C7H13Cl",
-        "objectPath": "assets/objects/isometria_geometrica/cis-1-cloro-1_2-dimetil-ciclo-pentano.obj",
+        "objectPath": "assets/objects/isomeria_geometrica/cis-1-cloro-1_2-dimetil-ciclo-pentano.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
         "name": "Trans-but-2-eno",
         "molecularFormula": "C2H8",
-        "objectPath": "assets/objects/isometria_geometrica/trans-but-2-eno.obj",
+        "objectPath": "assets/objects/isomeria_geometrica/trans-but-2-eno.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
         "name": "Cis-but-2-eno",
         "molecularFormula": "C2H8",
-        "objectPath": "assets/objects/isometria_geometrica/cis-but-2-eno.obj",
+        "objectPath": "assets/objects/isomeria_geometrica/cis-but-2-eno.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
         "name": "Trans-dimetil-ciclo-propano",
         "molecularFormula": "C5H10",
-        "objectPath": "assets/objects/isometria_geometrica/trans-dimetil-ciclo-propano.obj",
+        "objectPath": "assets/objects/isomeria_geometrica/trans-dimetil-ciclo-propano.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
         "name": "Cis-dimetil-ciclo-propano",
         "molecularFormula": "C5H10",
-        "objectPath": "assets/objects/isometria_geometrica/cis-dimetil-ciclo-propano.obj",
+        "objectPath": "assets/objects/isomeria_geometrica/cis-dimetil-ciclo-propano.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       }
@@ -243,7 +243,7 @@
       },
       {
         "name": "Glicose",
-        "molecularFormula": "C₆H₁₂O₆",
+        "molecularFormula": "C6H12O6",
         "objectPath": "assets/objects/isomeria_optica/glicose.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
@@ -321,14 +321,14 @@
       {
         "name": "Aspartame 1",
         "molecularFormula": "C14H18N2O5",
-        "objectPath": "assets/objects/peptidios/aspartame_1.obj",
+        "objectPath": "assets/objects/peptideos/aspartame_1.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
         "name": "Aspartame 2",
         "molecularFormula": "C14H18N2O5",
-        "objectPath": "assets/objects/peptidios/aspartame_2.obj",
+        "objectPath": "assets/objects/peptideos/aspartame_2.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       }

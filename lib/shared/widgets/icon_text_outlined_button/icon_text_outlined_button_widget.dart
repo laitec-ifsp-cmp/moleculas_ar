@@ -24,20 +24,23 @@ class IconTextOutlinedButtonWidget extends StatelessWidget {
       child: Row(children: [
         Image.asset(imagePath, height: 40, width: 40),
         SizedBox(width: AppRes.dimens.defaultVerticalMargin),
-        RichText(
-          text: TextSpan(children: <TextSpan>[
-            TextSpan(text: title, style: AppTheme.textStyles.itemTitle),
-            if (subTitle != null)
-              TextSpan(
-                text: "\n$subTitle",
-                style: AppTheme.textStyles.itemSubTitle,
-              ),
-          ]),
+        Expanded(
+          child: RichText(
+            text: TextSpan(children: <TextSpan>[
+              TextSpan(text: title, style: AppTheme.textStyles.itemTitle),
+              if (subTitle != null)
+                TextSpan(
+                  text: "\n$subTitle",
+                  style: AppTheme.textStyles.itemSubTitle,
+                ),
+            ]),
+          ),
         ),
       ]),
       style: OutlinedButton.styleFrom(
         padding: EdgeInsets.all(20),
-        fixedSize: Size(double.maxFinite, 80),
+        minimumSize: Size.fromHeight(AppRes.dimens.buttonMinHeight),
+        fixedSize: Size.fromWidth(double.maxFinite),
         primary: AppTheme.colors.primaryLight,
         shadowColor: AppTheme.colors.shadow,
         backgroundColor: AppTheme.colors.background,
