@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import 'app_theme.dart';
 
 extension TextExt on Text {
+  Text get description => Text(data!, style: AppTheme.textStyles.description);
+
+  Text get itemTitle => Text(data!, style: AppTheme.textStyles.itemTitle);
+
   Text get splashText => Text(data!, style: AppTheme.textStyles.splashText);
 
   Text get title => Text(data!, style: AppTheme.textStyles.title);

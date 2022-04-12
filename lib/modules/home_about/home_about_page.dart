@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:moleculas_ar/modules/about/about_page.dart';
+import 'package:moleculas_ar/modules/home_about/pages/about/about_page.dart';
+import 'package:moleculas_ar/modules/home_about/pages/about_us/about_us_page.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
@@ -26,7 +27,7 @@ class HomeAboutPage extends StatelessWidget {
                   imagePath: AppRes.images.aboutEBook,
                   title: AppRes.strings.accessEBook,
                   // TODO: Update summary and onPressedButton of eBook option
-                  summary: AppRes.strings.loremIpsum,
+                  summary: AppRes.strings.shortLoremIpsum,
                   onPressedButton: () {},
                 );
               },
@@ -41,7 +42,7 @@ class HomeAboutPage extends StatelessWidget {
                   imagePath: AppRes.images.aboutTargets,
                   title: AppRes.strings.downloadTargets,
                   // TODO: Update summary and onPressedButton of Targets option
-                  summary: AppRes.strings.loremIpsum,
+                  summary: AppRes.strings.shortLoremIpsum,
                   onPressedButton: () {},
                 );
               },
@@ -50,7 +51,10 @@ class HomeAboutPage extends StatelessWidget {
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAbout,
               title: AppRes.strings.about,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (_) => AboutUsPage()));
+              },
             ),
             SizedBox(height: AppRes.dimens.defaultVerticalMargin),
             IconTextOutlinedButtonWidget(
@@ -62,7 +66,7 @@ class HomeAboutPage extends StatelessWidget {
                   imagePath: AppRes.images.aboutFeedback,
                   // TODO: Update summary and onPressedButton of Feedback option
                   title: AppRes.strings.giveFeedback,
-                  summary: AppRes.strings.loremIpsum,
+                  summary: AppRes.strings.shortLoremIpsum,
                   onPressedButton: () {},
                 );
               },

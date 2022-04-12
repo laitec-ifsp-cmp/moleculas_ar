@@ -53,17 +53,17 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           OnBoardingInfoWidget(
             image: AppRes.images.onBoardingDna,
             title: "Introdução",
-            summary: AppRes.strings.loremIpsum,
+            summary: AppRes.strings.shortLoremIpsum,
           ),
           OnBoardingInfoWidget(
             image: AppRes.images.onBoardingDna3d,
             title: "Introdução",
-            summary: AppRes.strings.loremIpsum,
+            summary: AppRes.strings.shortLoremIpsum,
           ),
           OnBoardingInfoWidget(
             image: AppRes.images.onBoardingDnaHolo,
             title: "Introdução",
-            summary: AppRes.strings.loremIpsum,
+            summary: AppRes.strings.shortLoremIpsum,
           ),
         ],
       ),
