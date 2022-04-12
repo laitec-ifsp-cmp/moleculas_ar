@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
+
+import 'widgets/info_topic/info_topic_widget.dart';
 
 class AboutUsPage extends StatelessWidget {
   const AboutUsPage({Key? key}) : super(key: key);
@@ -23,12 +26,15 @@ class AboutUsPage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(AppRes.strings.loremIpsum).title,
-                SizedBox(height: AppRes.dimens.smallMargin),
-                Text(
-                  "     ${AppRes.strings.longLoremIpsum}",
-                  style: AppTheme.textStyles.summary,
-                  textAlign: TextAlign.justify,
+                InfoTopicWidget(
+                  title: AppRes.strings.loremIpsum,
+                  description: AppRes.strings.longLoremIpsum,
+                ),
+                SizedBox(height: AppRes.dimens.largeMargin),
+
+                InfoTopicWidget(
+                  title: AppRes.strings.loremIpsum,
+                  description: AppRes.strings.mediumLoremIpsum,
                 ),
                 SizedBox(height: AppRes.dimens.largeMargin),
 
