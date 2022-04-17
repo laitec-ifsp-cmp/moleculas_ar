@@ -5,6 +5,8 @@ import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
+import 'widgets/dev_info/dev_info_widget.dart';
+import 'widgets/dev_topic/dev_topic_widget.dart';
 import 'widgets/info_topic/info_topic_widget.dart';
 
 class AboutUsPage extends StatelessWidget {
@@ -30,44 +32,26 @@ class AboutUsPage extends StatelessWidget {
                   title: AppRes.strings.loremIpsum,
                   description: AppRes.strings.longLoremIpsum,
                 ),
-                SizedBox(height: AppRes.dimens.largeMargin),
 
                 InfoTopicWidget(
                   title: AppRes.strings.loremIpsum,
                   description: AppRes.strings.mediumLoremIpsum,
                 ),
-                SizedBox(height: AppRes.dimens.largeMargin),
 
-                Text(AppRes.strings.loremIpsum).title,
-                SizedBox(height: AppRes.dimens.smallMargin),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Expanded(
-                      flex: 0,
-                      child: Container(
-                        height: 60,
-                        width: 60,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          image: DecorationImage(image: AssetImage("")),
-                        ),
-                      ),
+                DevTopicWidget(
+                  devInfoList: [
+                    DevInfoWidget(
+                      imagePath: "",
+                      name: AppRes.strings.loremIpsum,
+                      description: AppRes.strings.shortLoremIpsum,
                     ),
-                    SizedBox(width: AppRes.dimens.smallMargin),
-                    Expanded(
-                      flex: 1,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(AppRes.strings.loremIpsum).itemTitle,
-                          Text(AppRes.strings.loremIpsum).description,
-                        ],
-                      ),
+                    DevInfoWidget(
+                      imagePath: "",
+                      name: AppRes.strings.loremIpsum,
+                      description: AppRes.strings.shortLoremIpsum,
                     ),
                   ],
                 ),
-                SizedBox(height: AppRes.dimens.largeMargin),
 
                 Text(AppRes.strings.loremIpsum).title,
                 SizedBox(height: AppRes.dimens.smallMargin),

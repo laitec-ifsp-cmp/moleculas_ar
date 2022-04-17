@@ -24,6 +24,7 @@ class InfoTopicWidget extends StatelessWidget {
           style: AppTheme.textStyles.summary,
           textAlign: TextAlign.justify,
         ),
+        SizedBox(height: AppRes.dimens.largeMargin),
       ],
     );
   }
