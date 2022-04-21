@@ -8,6 +8,7 @@ import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 import 'widgets/dev_info/dev_info_widget.dart';
 import 'widgets/dev_topic/dev_topic_widget.dart';
 import 'widgets/info_topic/info_topic_widget.dart';
+import 'widgets/institutes_topic/institutes_topic_widget.dart';
 
 class AboutUsPage extends StatelessWidget {
   const AboutUsPage({Key? key}) : super(key: key);
@@ -53,23 +54,15 @@ class AboutUsPage extends StatelessWidget {
                   ],
                 ),
 
-                Text(AppRes.strings.loremIpsum).title,
-                SizedBox(height: AppRes.dimens.smallMargin),
-                SizedBox(
-                  width: double.maxFinite,
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceEvenly,
-                    spacing: AppRes.dimens.smallMargin,
-                    runSpacing: AppRes.dimens.smallMargin,
-                    children: [
-                      SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
-                      SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
-                      SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
-                      SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
-                      SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
-                    ],
-                  ),
-                )
+                InstitutesTopicWidget(
+                  logoList: [
+                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
+                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
+                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
+                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
+                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
+                  ],
+                ),
               ],
             ),
           ),

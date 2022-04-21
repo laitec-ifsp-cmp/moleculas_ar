@@ -21,6 +21,7 @@ class DevTopicWidget extends StatelessWidget {
           itemCount: devInfoList.length,
           itemBuilder: (context, dev) => devInfoList[dev],
           scrollDirection: Axis.vertical,
+          physics: NeverScrollableScrollPhysics(),
           shrinkWrap: true,
           separatorBuilder: (BuildContext context, int index) =>
               SizedBox(height: AppRes.dimens.smallMargin),
