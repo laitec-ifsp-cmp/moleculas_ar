@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'app_theme.dart';
 
 abstract class IAppTextStyles {
+  TextStyle get description;
   TextStyle get splashText;
   TextStyle get title;
   TextStyle get summary;
@@ -18,6 +19,13 @@ abstract class IAppTextStyles {
 }
 
 class AppTextStyles implements IAppTextStyles {
+  @override
+  TextStyle get description => GoogleFonts.poppins(
+    fontSize: 12,
+    color: AppTheme.colors.textSecondary,
+    fontWeight: FontWeight.normal,
+  );
+
   @override
   TextStyle get splashText => GoogleFonts.poppins(
         fontSize: 26,

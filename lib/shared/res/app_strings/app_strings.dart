@@ -8,8 +8,11 @@ abstract class IAppStrings {
   String get feedback;
   String get giveFeedback;
   String get jump;
+  String get longLoremIpsum;
   String get loremIpsum;
+  String get mediumLoremIpsum;
   String get molecules;
+  String get shortLoremIpsum;
   String get targets;
 }
 
@@ -22,6 +25,9 @@ class AppStrings implements IAppStrings {
 
   @override
   String get appName => "Moléculas AR";
+
+  @override
+  String get clickHere => "Clique aqui";
 
   @override
   String get downloadTargets => "Baixe nossos targets";
@@ -39,13 +45,19 @@ class AppStrings implements IAppStrings {
   String get jump => "Pular";
 
   @override
-  String get loremIpsum => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore";
+  String get longLoremIpsum => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.";
+
+  @override
+  String get loremIpsum => "Lorem ipsum";
+
+  @override
+  String get mediumLoremIpsum => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.";
 
   @override
   String get molecules => "Moléculas";
 
   @override
-  String get clickHere => "Clique aqui";
+  String get shortLoremIpsum => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore";
 
   @override
   String get targets => "Targets";
