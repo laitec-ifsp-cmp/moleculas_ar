@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="sacarose" size="1.000000 0.772595" />
+    <ImageTarget name="glicose" size="1.000000 0.772595" />
+    <ImageTarget name="frutose" size="1.000000 0.772595" />
+    <ImageTarget name="bromo-cloro-fluor-metano_2" size="1.000000 0.772595" />
+    <ImageTarget name="bromo-cloro-fluor-metano_1" size="1.000000 0.772595" />
+    <ImageTarget name="trans-dimetil-ciclopropano" size="1.000000 0.772595" />
+    <ImageTarget name="trans-but-2-eno" size="1.000000 0.772595" />
+    <ImageTarget name="trans-1-cloro-1_2-dimetil-ciclopentano" size="1.000000 0.772595" />
+    <ImageTarget name="cis-dimetil-ciclopropano" size="1.000000 0.772595" />
+    <ImageTarget name="cis-but-2-eno" size="1.000000 0.772595" />
+    <ImageTarget name="cis-1-cloro-1_2-dimetil-ciclopentano" size="1.000000 0.772595" />
+    <ImageTarget name="acido_trans-butenodioico" size="1.000000 0.772595" />
+    <ImageTarget name="acido_cis-butenodioico" size="1.000000 0.772595" />
+    <ImageTarget name="tricloreto_de_boro" size="1.000000 0.772595" />
+    <ImageTarget name="oxido_de_hidrogenio" size="1.000000 0.772595" />
+    <ImageTarget name="metano" size="1.000000 0.772595" />
+    <ImageTarget name="hexafluoreto_de_enxofre" size="1.000000 0.772595" />
+    <ImageTarget name="amonia" size="1.000000 0.772595" />
+    <ImageTarget name="triptofano" size="1.000000 0.772595" />
+    <ImageTarget name="isoleucina" size="1.000000 0.772595" />
+    <ImageTarget name="histidina" size="1.000000 0.772595" />
+    <ImageTarget name="cisteina" size="1.000000 0.772595" />
+    <ImageTarget name="arginina" size="1.000000 0.772595" />
+    <ImageTarget name="alanina" size="1.000000 0.772595" />
+    <ImageTarget name="desoxiguanosina_monofosfato" size="1.000000 0.772595" />
+    <ImageTarget name="uridina" size="1.000000 0.772595" />
+    <ImageTarget name="uracila" size="1.000000 0.772595" />
+    <ImageTarget name="timina" size="1.000000 0.772595" />
+    <ImageTarget name="ribose" size="1.000000 0.772595" />
+    <ImageTarget name="guanosina" size="1.000000 0.772595" />
+    <ImageTarget name="guanina" size="1.000000 0.772595" />
+    <ImageTarget name="desoxitimidina_monofosfato" size="1.000000 0.772595" />
+    <ImageTarget name="desoxirribose" size="1.000000 0.772595" />
+    <ImageTarget name="desoxicitidina_monofosfato" size="1.000000 0.772595" />
+    <ImageTarget name="desoxiadenosina_monofosfato" size="1.000000 0.765896" />
+    <ImageTarget name="citosina" size="1.000000 0.772595" />
+    <ImageTarget name="citidina" size="1.000000 0.772595" />
+    <ImageTarget name="adenosina" size="1.000000 0.772595" />
+    <ImageTarget name="adenina" size="1.000000 0.772595" />
+    <ImageTarget name="acido_fosforico" size="1.000000 0.772595" />
+  </Tracking>
+</QCARConfig>
