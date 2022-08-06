@@ -60,30 +60,30 @@
         "structuralFormulaImagePath": ""
       },
       {
-        "name": "Desoxiadenosina",
-        "molecularFormula": "C10H13N5O3",
-        "objectPath": "assets/objects/acidos_nucleicos/desoxiadenosina.obj",
+        "name": "Desoxiadenosina monofosfato",
+        "molecularFormula": "C10H14N5O6P",
+        "objectPath": "assets/objects/acidos_nucleicos/desoxiadenosina_monofosfato.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
-        "name": "Desoxicitidina",
-        "molecularFormula": "C9H13N3O4",
-        "objectPath": "assets/objects/acidos_nucleicos/desoxicitidina.obj",
+        "name": "Desoxicitidina monofosfato",
+        "molecularFormula": "C9H14N5O7P",
+        "objectPath": "assets/objects/acidos_nucleicos/desoxicitidina_monofosfato.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
-        "name": "Desoxiguanina",
+        "name": "Desoxiguanosina monofosfato",
         "molecularFormula": "C10H14N5O7P",
-        "objectPath": "assets/objects/acidos_nucleicos/desoxiguanina.obj",
+        "objectPath": "assets/objects/acidos_nucleicos/desoxiguanosina_monofosfato.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
-        "name": "Desoxitimidina",
-        "molecularFormula": "C10H14N2O5",
-        "objectPath": "assets/objects/acidos_nucleicos/desoxitimidina.obj",
+        "name": "Desoxitimidina monofosfato",
+        "molecularFormula": "C10H13N2O8P",
+        "objectPath": "assets/objects/acidos_nucleicos/desoxitimidina_monofosfato.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
@@ -144,16 +144,16 @@
         "structuralFormulaImagePath": ""
       },
       {
-        "name": "Óxido de Hidrogênio - Água",
+        "name": "Óxido de Hidrogênio (Água)",
         "molecularFormula": "H20",
         "objectPath": "assets/objects/geometria_molecular/oxido_de_hidrogenio.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
-        "name": "Cloreto de Boro",
+        "name": "Tricloreto de Boro",
         "molecularFormula": "BCl3",
-        "objectPath": "assets/objects/geometria_molecular/cloreto_de_boro.obj",
+        "objectPath": "assets/objects/geometria_molecular/tricloreto_de_boro.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       }
@@ -179,44 +179,44 @@
         "structuralFormulaImagePath": ""
       },
       {
-        "name": "Trans-1-cloro-1,2-dimetil-ciclo-pentano",
+        "name": "Trans-1-cloro-1,2-dimetil-ciclopentano",
         "molecularFormula": "C7H13Cl",
-        "objectPath": "assets/objects/isomeria_geometrica/trans-1-cloro-1_2-dimetil-ciclo-pentano.obj",
+        "objectPath": "assets/objects/isomeria_geometrica/trans-1-cloro-1_2-dimetil-ciclopentano.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
-        "name": "Cis-1-cloro-1,2-dimetil-ciclo-pentano",
+        "name": "Cis-1-cloro-1,2-dimetil-ciclopentano",
         "molecularFormula": "C7H13Cl",
-        "objectPath": "assets/objects/isomeria_geometrica/cis-1-cloro-1_2-dimetil-ciclo-pentano.obj",
+        "objectPath": "assets/objects/isomeria_geometrica/cis-1-cloro-1_2-dimetil-ciclopentano.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
         "name": "Trans-but-2-eno",
-        "molecularFormula": "C2H8",
+        "molecularFormula": "C4H8",
         "objectPath": "assets/objects/isomeria_geometrica/trans-but-2-eno.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
         "name": "Cis-but-2-eno",
-        "molecularFormula": "C2H8",
+        "molecularFormula": "C4H8",
         "objectPath": "assets/objects/isomeria_geometrica/cis-but-2-eno.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
-        "name": "Trans-dimetil-ciclo-propano",
+        "name": "Trans-dimetil-ciclopropano",
         "molecularFormula": "C5H10",
-        "objectPath": "assets/objects/isomeria_geometrica/trans-dimetil-ciclo-propano.obj",
+        "objectPath": "assets/objects/isomeria_geometrica/trans-dimetil-ciclopropano.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       },
       {
-        "name": "Cis-dimetil-ciclo-propano",
+        "name": "Cis-dimetil-ciclopropano",
         "molecularFormula": "C5H10",
-        "objectPath": "assets/objects/isomeria_geometrica/cis-dimetil-ciclo-propano.obj",
+        "objectPath": "assets/objects/isomeria_geometrica/cis-dimetil-ciclopropano.obj",
         "iconPath": "",
         "structuralFormulaImagePath": ""
       }

@@ -1,4 +1,4 @@
-# Blender MTL File: 'cisteina.blend'
+# Blender MTL File: 'desoxiguanosina_monofosfato.blend'
 # Material Count: 6
 
 newmtl carbono
@@ -11,17 +11,17 @@ Ni 1.000000
 d 1.000000
 illum 2
 
-newmtl enxofre
+newmtl fosforo
 Ns 323.999994
 Ka 1.000000 1.000000 1.000000
-Kd 0.438085 0.000000 0.138174
+Kd 0.195116 0.756775 1.000000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
 
-newmtl hidrogenio
+newmtl hidrogenio.001
 Ns 323.999994
 Ka 1.000000 1.000000 1.000000
 Kd 0.005754 0.000000 1.000000
@@ -44,7 +44,7 @@ illum 2
 newmtl nitrogenio
 Ns 323.999994
 Ka 1.000000 1.000000 1.000000
-Kd 0.024776 1.000000 0.859161
+Kd 0.024777 1.000000 0.859160
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000

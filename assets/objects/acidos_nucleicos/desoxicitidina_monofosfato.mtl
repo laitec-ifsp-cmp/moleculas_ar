@@ -1,4 +1,4 @@
-# Blender MTL File: 'desoxiguanina.blend'
+# Blender MTL File: 'desoxicitidina_monofosfato.blend'
 # Material Count: 6
 
 newmtl carbono
@@ -21,7 +21,7 @@ Ni 1.000000
 d 1.000000
 illum 2
 
-newmtl hidrogenio.001
+newmtl hidrogenio
 Ns 323.999994
 Ka 1.000000 1.000000 1.000000
 Kd 0.005754 0.000000 1.000000
