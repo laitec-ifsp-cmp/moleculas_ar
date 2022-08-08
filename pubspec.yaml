@@ -67,6 +67,12 @@ flutter:
     - assets/database/
 
     - assets/images/
+    - assets/images/structural_formulas/acidos_nucleicos/
+    - assets/images/structural_formulas/aminoacidos/
+    - assets/images/structural_formulas/geometria_molecular/
+    - assets/images/structural_formulas/isomeria_geometrica/
+    - assets/images/structural_formulas/isomeria_optica/
+    - assets/images/structural_formulas/peptideos/
 
     - assets/objects/acidos_nucleicos/
     - assets/objects/aminoacidos/
