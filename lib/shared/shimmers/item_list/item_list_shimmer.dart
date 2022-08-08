@@ -28,9 +28,9 @@ class ItemListShimmer extends StatelessWidget {
               BoxShadow(
                 color: AppTheme.colors.shadow,
                 blurRadius: 5,
-                offset: Offset(0, 5)
+                offset: Offset(0, 5),
               ),
-            ]
+            ],
           ),
         ),
       ),

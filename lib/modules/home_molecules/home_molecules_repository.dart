@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-
 import 'package:moleculas_ar/shared/models/molecules_category_model.dart';
 
 class HomeMoleculesRepository {

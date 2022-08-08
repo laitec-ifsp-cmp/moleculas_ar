@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:moleculas_ar/modules/home_about/home_about_page.dart';
+import 'package:moleculas_ar/modules/home_molecules/home_molecules_page.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
-import '../home_about/home_about_page.dart';
-import '../home_molecules/home_molecules_page.dart';
-import 'widgets/home_bottom_nav/home_bottom_nav_widget.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
+
+import 'widgets/home_bottom_nav/home_bottom_nav_widget.dart';
 
 class HomeNavigationPage extends StatefulWidget {
   const HomeNavigationPage({Key? key}) : super(key: key);

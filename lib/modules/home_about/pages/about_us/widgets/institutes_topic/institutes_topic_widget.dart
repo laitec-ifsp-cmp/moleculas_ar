@@ -4,6 +4,7 @@ import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class InstitutesTopicWidget extends StatelessWidget {
   final List<Widget> logoList;
+
   const InstitutesTopicWidget({
     Key? key,
     required this.logoList,

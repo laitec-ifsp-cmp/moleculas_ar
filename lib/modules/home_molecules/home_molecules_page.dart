@@ -5,7 +5,6 @@ import 'package:moleculas_ar/modules/molecule_category/molecule_category_page.da
 import 'package:moleculas_ar/shared/models/molecule_model.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/shimmers/item_list/item_list_shimmer.dart';
-
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
 class HomeMoleculesPage extends StatefulWidget {

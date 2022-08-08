@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../gradient_magin/gradient_margin_widget.dart';
+import 'package:moleculas_ar/shared/widgets/gradient_magin/gradient_margin_widget.dart';
 
 class BodyGradientMarginWidget extends StatelessWidget {
   final Widget child;

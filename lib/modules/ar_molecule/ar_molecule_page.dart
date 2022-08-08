@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cube/flutter_cube.dart';
-
-import 'widget/molecule_info_sheet/molecule_info_sheet_widget.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
+
+import 'widget/molecule_info_sheet/molecule_info_sheet_widget.dart';
 
 class ArMoleculePage extends StatelessWidget {
   final String name;
