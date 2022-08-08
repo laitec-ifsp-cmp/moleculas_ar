@@ -17,18 +17,15 @@ class MoleculeInfoSheetWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DraggableScrollableSheet(
-      initialChildSize: 0.154,
-      minChildSize: 0.154,
+      initialChildSize: structuralFormulaImagePath.isNotEmpty ? 0.154 : 0.11,
+      minChildSize: structuralFormulaImagePath.isNotEmpty ? 0.154 : 0.11,
       // TODO: Make 'maxChildSize' dynamically set by the height of the child.
-      maxChildSize: structuralFormulaImagePath.isNotEmpty ? 0.37 : 0.154,
+      maxChildSize: structuralFormulaImagePath.isNotEmpty ? 0.37 : 0.11,
       builder: (context, scrollController) {
         return Container(
           decoration: BoxDecoration(
             color: AppTheme.colors.background,
-            borderRadius: BorderRadius.only(
-              topRight: Radius.circular(30),
-              topLeft: Radius.circular(30),
-            ),
+            borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
           ),
           child: SingleChildScrollView(
             physics: ClampingScrollPhysics(),
@@ -39,15 +36,17 @@ class MoleculeInfoSheetWidget extends StatelessWidget {
                 horizontal: AppRes.dimens.appHorizontalMargin,
               ),
               child: Column(children: [
-                Container(
-                  height: 5,
-                  width: 40,
-                  decoration: BoxDecoration(
-                    color: AppTheme.colors.light,
-                    borderRadius: BorderRadius.circular(5),
+                if (structuralFormulaImagePath.isNotEmpty)
+                  Container(
+                    height: 5,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      color: AppTheme.colors.light,
+                      borderRadius: BorderRadius.circular(5),
+                    ),
                   ),
-                ),
-                SizedBox(height: AppRes.dimens.defaultVerticalMargin),
+                if (structuralFormulaImagePath.isNotEmpty)
+                  SizedBox(height: AppRes.dimens.defaultVerticalMargin),
                 Text(
                   moleculeName,
                   style: AppTheme.textStyles.moleculeName,
@@ -57,7 +56,7 @@ class MoleculeInfoSheetWidget extends StatelessWidget {
                 if (structuralFormulaImagePath.isNotEmpty)
                   SizedBox(height: AppRes.dimens.largeMargin),
                 if (structuralFormulaImagePath.isNotEmpty)
-                  Image.asset(structuralFormulaImagePath)
+                  Image.asset(structuralFormulaImagePath, height: 110)
               ]),
             ),
           ),
