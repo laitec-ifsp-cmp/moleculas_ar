@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_unity_widget/flutter_unity_widget.dart';
+import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
 class ArMoleculeTargetPage extends StatefulWidget {
@@ -15,6 +16,7 @@ class _ArMoleculeTargetPageState extends State<ArMoleculeTargetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppTheme.colors.background,
       appBar: AppBarWidget(),
       body: UnityWidget(
         onUnityCreated: onUnityCreated,
