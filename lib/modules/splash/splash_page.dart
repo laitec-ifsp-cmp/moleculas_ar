@@ -7,7 +7,7 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 10)).then(
+    Future.delayed(Duration(seconds: 3)).then(
         (value) => Navigator.pushReplacementNamed(context, "/on_boarding"));
 
     return Scaffold(
@@ -18,7 +18,7 @@ class SplashPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(AppRes.images.logo),
+              Image.asset("assets/images/logo.png"),
               SizedBox(height: AppRes.dimens.defaultVerticalMargin),
               Text(AppRes.strings.appName).splashText,
             ],
