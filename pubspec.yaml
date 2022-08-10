@@ -37,6 +37,7 @@ dependencies:
   google_fonts: ^2.2.0
   flutter_cube: ^0.1.1
   flutter_svg: ^1.0.3
+  flutter_native_splash: ^2.2.7
   flutter_unity_widget: ^2022.1.7+1
   shimmer: ^2.0.0
 
@@ -106,3 +107,10 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/logo.png
+
+  ios: false
+  web: false
