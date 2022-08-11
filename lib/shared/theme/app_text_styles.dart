@@ -8,7 +8,7 @@ abstract class IAppTextStyles {
   TextStyle get splashText;
   TextStyle get title;
   TextStyle get summary;
-  TextStyle get jumpOnBoarding;
+  TextStyle get textButton;
   TextStyle get homeTitle;
   TextStyle get appBarTitle;
   TextStyle get itemTitle;
@@ -48,7 +48,7 @@ class AppTextStyles implements IAppTextStyles {
       );
 
   @override
-  TextStyle get jumpOnBoarding => GoogleFonts.poppins(
+  TextStyle get textButton => GoogleFonts.poppins(
         fontSize: 12,
         color: AppTheme.colors.darkOrange,
         fontWeight: FontWeight.w600, // Semi-bold

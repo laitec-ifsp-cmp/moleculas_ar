@@ -29,7 +29,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             onPressed: () {
               Navigator.pushReplacementNamed(context, "/home_navigation");
             },
-            child: Text((AppRes.strings.jump).toUpperCase()).jumpOnBoarding,
+            child: Text((AppRes.strings.skip).toUpperCase()).textButton,
             style: TextButton.styleFrom(
               primary: AppTheme.colors.primaryLight,
               padding: EdgeInsets.symmetric(

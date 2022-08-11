@@ -4,8 +4,10 @@ import 'package:moleculas_ar/modules/home_molecules/home_molecules_page.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 import 'widgets/home_bottom_nav/home_bottom_nav_widget.dart';
+import 'widgets/permission_required/permission_required_dialog.dart';
 
 class HomeNavigationPage extends StatefulWidget {
   const HomeNavigationPage({Key? key}) : super(key: key);
@@ -64,8 +66,23 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
               });
             }
           },
-          onTapArMolecules: () {
-            Navigator.pushNamed(context, "/ar_molecule_target");
+          onTapArMolecules: () async {
+            var cameraStatus = await Permission.camera.status;
+
+            if (cameraStatus.isGranted) {
+              Navigator.pushNamed(context, "/ar_molecule_target");
+            } else if (cameraStatus.isDenied) {
+              var cameraRequestStatus = await Permission.camera.request();
+
+              if (cameraRequestStatus.isGranted) {
+                Navigator.pushNamed(context, "/ar_molecule_target");
+              } else if (cameraRequestStatus.isPermanentlyDenied) {
+                showDialog(
+                  context: context,
+                  builder: (_) => PermissionRequiredDialog(),
+                );
+              }
+            }
           },
           onTapSettings: () {
             if (_currentPage != 1) {

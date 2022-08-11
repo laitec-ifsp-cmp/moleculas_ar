@@ -17,8 +17,8 @@ extension TextExt on Text {
         textAlign: TextAlign.center,
       );
 
-  Text get jumpOnBoarding =>
-      Text(data!, style: AppTheme.textStyles.jumpOnBoarding);
+  Text get textButton =>
+      Text(data!, style: AppTheme.textStyles.textButton);
 
   Text get textFilledButton =>
       Text(data!, style: AppTheme.textStyles.textFilledButton);
