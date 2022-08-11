@@ -56,7 +56,7 @@ class MoleculeInfoSheetWidget extends StatelessWidget {
                 if (structuralFormulaImagePath.isNotEmpty)
                   SizedBox(height: AppRes.dimens.largeMargin),
                 if (structuralFormulaImagePath.isNotEmpty)
-                  Image.asset(structuralFormulaImagePath, height: 110)
+                  Image.asset(structuralFormulaImagePath, height: 145)
               ]),
             ),
           ),
