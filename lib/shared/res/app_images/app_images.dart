@@ -1,6 +1,7 @@
 abstract class IAppImages {
   String get aboutEBook;
   String get aboutFeedback;
+  String get appLogo;
   String get aboutTargets;
   String get cycloniteGeometricStructure;
   String get iconAbout;
@@ -15,7 +16,6 @@ abstract class IAppImages {
   String get iconSingleMolecule;
   String get iconTarget;
   String get iconThreeMolecules;
-  String get logo;
   String get onBoardingDna;
   String get onBoardingDna3d;
   String get onBoardingDnaHolo;
@@ -27,6 +27,9 @@ class AppImages implements IAppImages {
 
   @override
   String get aboutFeedback => "assets/images/about_feedback.svg";
+
+  @override
+  String get appLogo => "assets/images/app_logo.png";
 
   @override
   String get aboutTargets => "assets/images/about_targets.svg";
@@ -69,9 +72,6 @@ class AppImages implements IAppImages {
 
   @override
   String get iconThreeMolecules => "assets/images/icon_three_molecules.png";
-
-  @override
-  String get logo => "assets/images/logo.png";
 
   @override
   String get onBoardingDna => "assets/images/on_boarding_dna.svg";
