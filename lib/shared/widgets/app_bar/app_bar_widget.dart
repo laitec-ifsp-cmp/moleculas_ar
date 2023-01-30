@@ -24,7 +24,7 @@ class AppBarWidget extends PreferredSize {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  BackButtonWidget(),
+                  const BackButtonWidget(),
                   Text(title).appBarTitle,
                   SizedBox(width: AppRes.dimens.hugeMargin)
                 ],

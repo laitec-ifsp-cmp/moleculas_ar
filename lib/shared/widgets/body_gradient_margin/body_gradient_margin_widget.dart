@@ -14,12 +14,12 @@ class BodyGradientMarginWidget extends StatelessWidget {
     return Stack(
       children: [
         child,
-        GradientMarginWidget(
+        const GradientMarginWidget(
           top: 0,
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
         ),
-        GradientMarginWidget(
+        const GradientMarginWidget(
           bottom: 0,
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,

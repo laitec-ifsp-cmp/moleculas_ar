@@ -32,16 +32,16 @@ class ProgressBarWidget extends StatelessWidget {
                 ),
                 style: ElevatedButton.styleFrom(
                   elevation: 1,
-                  shape: CircleBorder(),
-                  fixedSize: Size(40, 40),
-                  primary: AppTheme.colors.background,
-                  onPrimary: AppTheme.colors.primaryLight,
+                  shape: const CircleBorder(),
+                  fixedSize: const Size(40, 40),
+                  backgroundColor: AppTheme.colors.background,
+                  foregroundColor: AppTheme.colors.primaryLight,
                   shadowColor: AppTheme.colors.shadow,
                   side: BorderSide(width: 1, color: AppTheme.colors.light),
                 ),
               )
             : Container(
-                margin: EdgeInsets.symmetric(horizontal: 11),
+                margin: const EdgeInsets.symmetric(horizontal: 11),
                 height: 40,
                 width: 40),
         ListView.separated(
@@ -58,17 +58,17 @@ class ProgressBarWidget extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           shrinkWrap: true,
           separatorBuilder: (BuildContext context, int index) =>
-              SizedBox(width: 10),
+              const SizedBox(width: 10),
         ),
         ElevatedButton(
           onPressed: onNextPressed,
           child: SvgPicture.asset(AppRes.images.iconArrowRight),
           style: ElevatedButton.styleFrom(
             elevation: 1,
-            shape: CircleBorder(),
-            fixedSize: Size(48, 48),
-            primary: AppTheme.colors.primary,
-            onPrimary: AppTheme.colors.primaryLight,
+            shape: const CircleBorder(),
+            fixedSize: const Size(48, 48),
+            backgroundColor: AppTheme.colors.primary,
+            foregroundColor: AppTheme.colors.primaryLight,
             shadowColor: AppTheme.colors.shadow,
           ),
         ),

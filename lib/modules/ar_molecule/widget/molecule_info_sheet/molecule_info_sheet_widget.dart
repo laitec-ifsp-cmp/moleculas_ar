@@ -25,10 +25,10 @@ class MoleculeInfoSheetWidget extends StatelessWidget {
         return Container(
           decoration: BoxDecoration(
             color: AppTheme.colors.background,
-            borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(30)),
           ),
           child: SingleChildScrollView(
-            physics: ClampingScrollPhysics(),
+            physics: const ClampingScrollPhysics(),
             controller: scrollController,
             child: Padding(
               padding: EdgeInsets.symmetric(

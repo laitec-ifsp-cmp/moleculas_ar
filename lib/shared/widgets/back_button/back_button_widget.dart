@@ -21,9 +21,9 @@ class BackButtonWidget extends StatelessWidget {
         elevation: 5,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         // TODO: Try to remove inner horizontal padding
-        fixedSize: Size(64, 64),
-        primary: AppTheme.colors.background,
-        onPrimary: AppTheme.colors.primaryLight,
+        fixedSize: const Size(64, 64),
+        backgroundColor: AppTheme.colors.background,
+        foregroundColor: AppTheme.colors.primaryLight,
         shadowColor: AppTheme.colors.shadow,
         side: BorderSide(width: 1, color: AppTheme.colors.light),
       ),

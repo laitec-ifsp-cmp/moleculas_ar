@@ -17,10 +17,10 @@ class AppWidget extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: "/splash",
       routes: {
-        "/splash": (context) => SplashPage(),
-        "/on_boarding": (context) => OnBoardingPage(),
-        "/home_navigation": (context) => HomeNavigationPage(),
-        "/ar_molecule_target": (context) => ArMoleculeTargetPage(),
+        "/splash": (context) => const SplashPage(),
+        "/on_boarding": (context) => const OnBoardingPage(),
+        "/home_navigation": (context) => const HomeNavigationPage(),
+        "/ar_molecule_target": (context) => const ArMoleculeTargetPage(),
       },
     );
   }

@@ -38,8 +38,8 @@ class HomeBottomNavWidget extends StatelessWidget {
           style: OutlinedButton.styleFrom(
             backgroundColor: AppTheme.colors.primary,
             shadowColor: AppTheme.colors.primaryLight,
-            shape: CircleBorder(),
-            fixedSize: Size(80, 80),
+            shape: const CircleBorder(),
+            fixedSize: const Size(80, 80),
           ),
         ),
         IconButton(

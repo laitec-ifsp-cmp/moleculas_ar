@@ -50,7 +50,7 @@ class _HomeMoleculesPageState extends State<HomeMoleculesPage> {
               vertical: AppRes.dimens.largeMargin,
             ),
             scrollDirection: Axis.vertical,
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             separatorBuilder: (BuildContext context, int index) =>
                 SizedBox(height: AppRes.dimens.defaultVerticalMargin),
           )

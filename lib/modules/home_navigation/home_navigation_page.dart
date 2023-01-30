@@ -35,7 +35,7 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
       ),
       body: BodyGradientMarginWidget(
         child: PageView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           controller: _pageController,
           onPageChanged: (int newPage) {
             setState(() {
@@ -60,7 +60,7 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
             if (_currentPage != 0) {
               setState(() {
                 _pageController.previousPage(
-                  duration: Duration(milliseconds: 400),
+                  duration: const Duration(milliseconds: 400),
                   curve: Curves.ease,
                 );
               });
@@ -79,7 +79,7 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
               } else if (cameraRequestStatus.isPermanentlyDenied) {
                 showDialog(
                   context: context,
-                  builder: (_) => PermissionRequiredDialog(),
+                  builder: (_) => const PermissionRequiredDialog(),
                 );
               }
             }
@@ -88,7 +88,7 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
             if (_currentPage != 1) {
               setState(() {
                 _pageController.nextPage(
-                  duration: Duration(milliseconds: 400),
+                  duration: const Duration(milliseconds: 400),
                   curve: Curves.ease,
                 );
               });

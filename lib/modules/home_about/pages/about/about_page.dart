@@ -44,9 +44,9 @@ class AboutPage extends StatelessWidget {
                 elevation: 5,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15)),
-                fixedSize: Size(double.maxFinite, 60),
-                primary: AppTheme.colors.primary,
-                onPrimary: AppTheme.colors.primaryLight,
+                fixedSize: const Size(double.maxFinite, 60),
+                backgroundColor: AppTheme.colors.primary,
+                foregroundColor: AppTheme.colors.primaryLight,
                 shadowColor: AppTheme.colors.shadow,
                 side: BorderSide(width: 1, color: AppTheme.colors.stroke),
               ),

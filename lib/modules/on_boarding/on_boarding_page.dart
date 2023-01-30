@@ -31,7 +31,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             },
             child: Text((AppRes.strings.skip).toUpperCase()).textButton,
             style: TextButton.styleFrom(
-              primary: AppTheme.colors.primaryLight,
+              foregroundColor: AppTheme.colors.primaryLight,
               padding: EdgeInsets.symmetric(
                   horizontal: AppRes.dimens.appHorizontalMargin),
             ),
@@ -39,7 +39,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         ],
       ),
       body: PageView(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         controller: _pageController,
         onPageChanged: (int newPage) {
           setState(() {
@@ -80,7 +80,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             if (_currentPage != _numPages - 1) {
               setState(() {
                 _pageController.nextPage(
-                  duration: Duration(milliseconds: 400),
+                  duration: const Duration(milliseconds: 400),
                   curve: Curves.ease,
                 );
               });
@@ -91,7 +91,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           onBackPressed: () {
             setState(() {
               _pageController.previousPage(
-                duration: Duration(milliseconds: 400),
+                duration: const Duration(milliseconds: 400),
                 curve: Curves.ease,
               );
             });

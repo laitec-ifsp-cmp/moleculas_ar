@@ -10,7 +10,7 @@ class HomeAboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      physics: BouncingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       child: Padding(
         padding: EdgeInsets.symmetric(
           vertical: AppRes.dimens.largeMargin,
@@ -52,8 +52,8 @@ class HomeAboutPage extends StatelessWidget {
               imagePath: AppRes.images.iconAbout,
               title: AppRes.strings.about,
               onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (_) => AboutUsPage()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => const AboutUsPage()));
               },
             ),
             SizedBox(height: AppRes.dimens.defaultVerticalMargin),

@@ -19,7 +19,7 @@ class AboutUsPage extends StatelessWidget {
       appBar: AppBarWidget(),
       body: BodyGradientMarginWidget(
         child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: Padding(
             padding: EdgeInsets.symmetric(
               vertical: AppRes.dimens.largeMargin,

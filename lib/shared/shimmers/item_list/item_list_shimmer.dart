@@ -28,7 +28,7 @@ class ItemListShimmer extends StatelessWidget {
               BoxShadow(
                 color: AppTheme.colors.shadow,
                 blurRadius: 5,
-                offset: Offset(0, 5),
+                offset: const Offset(0, 5),
               ),
             ],
           ),
@@ -39,7 +39,7 @@ class ItemListShimmer extends StatelessWidget {
         vertical: AppRes.dimens.largeMargin,
       ),
       scrollDirection: Axis.vertical,
-      physics: BouncingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       separatorBuilder: (BuildContext context, int index) =>
           SizedBox(height: AppRes.dimens.defaultVerticalMargin),
     );
