@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moleculas_ar/shared/res/app_res.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class InfoTopicWidget extends StatelessWidget {
@@ -18,13 +18,13 @@ class InfoTopicWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(title).title,
-        SizedBox(height: AppRes.dimens.smallMargin),
+        SizedBox(height: 10.h),
         Text(
           "     $description",
           style: AppTheme.textStyles.summary,
           textAlign: TextAlign.justify,
         ),
-        SizedBox(height: AppRes.dimens.largeMargin),
+        SizedBox(height: 30.h),
       ],
     );
   }

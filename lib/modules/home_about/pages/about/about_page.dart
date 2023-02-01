@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
@@ -24,27 +25,24 @@ class AboutPage extends StatelessWidget {
       backgroundColor: AppTheme.colors.background,
       appBar: AppBarWidget(),
       body: Container(
-        padding: EdgeInsets.symmetric(
-          vertical: AppRes.dimens.hugeMargin,
-          horizontal: AppRes.dimens.appHorizontalMargin,
-        ),
+        padding: EdgeInsets.symmetric(vertical: 40.h, horizontal: 24.w),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SvgPicture.asset(imagePath),
-            SizedBox(height: AppRes.dimens.hugeMargin),
+            SvgPicture.asset(imagePath, height: 295.h, width: 295.w),
+            SizedBox(height: 40.h),
             Text(title).title,
-            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
+            SizedBox(height: 20.h),
             Text(summary).summary,
-            SizedBox(height: AppRes.dimens.hugeMargin),
+            SizedBox(height: 40.h),
             ElevatedButton(
               onPressed: onPressedButton,
               child: Text(AppRes.strings.clickHere).textFilledButton,
               style: ElevatedButton.styleFrom(
                 elevation: 5,
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15)),
-                fixedSize: const Size(double.maxFinite, 60),
+                    borderRadius: BorderRadius.circular(15.r)),
+                fixedSize: Size(double.maxFinite, 60.h),
                 backgroundColor: AppTheme.colors.primary,
                 foregroundColor: AppTheme.colors.primaryLight,
                 shadowColor: AppTheme.colors.shadow,

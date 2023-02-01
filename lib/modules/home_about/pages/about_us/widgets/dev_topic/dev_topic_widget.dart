@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
@@ -16,7 +17,7 @@ class DevTopicWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(AppRes.strings.loremIpsum).title,
-        SizedBox(height: AppRes.dimens.smallMargin),
+        SizedBox(height: 10.h),
         ListView.separated(
           itemCount: devInfoList.length,
           itemBuilder: (context, dev) => devInfoList[dev],
@@ -24,9 +25,9 @@ class DevTopicWidget extends StatelessWidget {
           physics: const NeverScrollableScrollPhysics(),
           shrinkWrap: true,
           separatorBuilder: (BuildContext context, int index) =>
-              SizedBox(height: AppRes.dimens.smallMargin),
+              SizedBox(height: 10.h),
         ),
-        SizedBox(height: AppRes.dimens.largeMargin),
+        SizedBox(height: 30.h),
       ],
     );
   }

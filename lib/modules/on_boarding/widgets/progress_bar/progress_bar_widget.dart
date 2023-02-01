@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
@@ -27,13 +28,13 @@ class ProgressBarWidget extends StatelessWidget {
                 onPressed: onBackPressed,
                 child: SvgPicture.asset(
                   AppRes.images.iconArrowLeft,
-                  width: 20,
-                  height: 20,
+                  height: 20.h,
+                  width: 20.w,
                 ),
                 style: ElevatedButton.styleFrom(
                   elevation: 1,
                   shape: const CircleBorder(),
-                  fixedSize: const Size(40, 40),
+                  fixedSize: Size(40.h, 40.w),
                   backgroundColor: AppTheme.colors.background,
                   foregroundColor: AppTheme.colors.primaryLight,
                   shadowColor: AppTheme.colors.shadow,
@@ -41,9 +42,9 @@ class ProgressBarWidget extends StatelessWidget {
                 ),
               )
             : Container(
-                margin: const EdgeInsets.symmetric(horizontal: 11),
-                height: 40,
-                width: 40),
+                margin: EdgeInsets.symmetric(horizontal: 11.w),
+                height: 40.h,
+                width: 40.w),
         ListView.separated(
           itemCount: totalPage,
           itemBuilder: (context, index) => Container(
@@ -62,11 +63,15 @@ class ProgressBarWidget extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: onNextPressed,
-          child: SvgPicture.asset(AppRes.images.iconArrowRight),
+          child: SvgPicture.asset(
+            AppRes.images.iconArrowRight,
+            height: 24.h,
+            width: 24.w,
+          ),
           style: ElevatedButton.styleFrom(
             elevation: 1,
             shape: const CircleBorder(),
-            fixedSize: const Size(48, 48),
+            fixedSize: Size(48.h, 48.w),
             backgroundColor: AppTheme.colors.primary,
             foregroundColor: AppTheme.colors.primaryLight,
             shadowColor: AppTheme.colors.shadow,

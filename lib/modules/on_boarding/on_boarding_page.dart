@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
@@ -32,8 +33,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             child: Text((AppRes.strings.skip).toUpperCase()).textButton,
             style: TextButton.styleFrom(
               foregroundColor: AppTheme.colors.primaryLight,
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppRes.dimens.appHorizontalMargin),
+              padding: EdgeInsets.symmetric(horizontal: 24.w),
             ),
           ),
         ],
@@ -67,11 +67,8 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         ],
       ),
       bottomNavigationBar: Container(
-        height: 60,
-        margin: EdgeInsets.symmetric(
-          vertical: AppRes.dimens.defaultVerticalMargin,
-          horizontal: AppRes.dimens.appHorizontalMargin,
-        ),
+        height: 60.h,
+        margin: EdgeInsets.symmetric(vertical: 20.h, horizontal: 24.w),
         alignment: Alignment.topCenter,
         child: ProgressBarWidget(
           totalPage: _numPages,

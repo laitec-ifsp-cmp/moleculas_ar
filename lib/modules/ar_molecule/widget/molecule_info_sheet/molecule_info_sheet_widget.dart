@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moleculas_ar/shared/res/app_res.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class MoleculeInfoSheetWidget extends StatelessWidget {
@@ -25,29 +25,26 @@ class MoleculeInfoSheetWidget extends StatelessWidget {
         return Container(
           decoration: BoxDecoration(
             color: AppTheme.colors.background,
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(30)),
+            borderRadius: BorderRadius.vertical(top: Radius.circular(30.r)),
           ),
           child: ScrollConfiguration(
             behavior: NoScrollPhysics(),
             child: SingleChildScrollView(
               controller: scrollController,
               child: Padding(
-                padding: EdgeInsets.symmetric(
-                  vertical: AppRes.dimens.defaultVerticalMargin,
-                  horizontal: AppRes.dimens.appHorizontalMargin,
-                ),
+                padding: EdgeInsets.symmetric(vertical: 20.h, horizontal: 24.w),
                 child: Column(children: [
                   if (structuralFormulaImagePath.isNotEmpty)
                     Container(
-                      height: 5,
-                      width: 40,
+                      height: 5.h,
+                      width: 40.w,
                       decoration: BoxDecoration(
                         color: AppTheme.colors.light,
-                        borderRadius: BorderRadius.circular(5),
+                        borderRadius: BorderRadius.circular(5.r),
                       ),
                     ),
                   if (structuralFormulaImagePath.isNotEmpty)
-                    SizedBox(height: AppRes.dimens.defaultVerticalMargin),
+                    SizedBox(height: 20.h),
                   Text(
                     moleculeName,
                     style: AppTheme.textStyles.moleculeName,
@@ -55,9 +52,9 @@ class MoleculeInfoSheetWidget extends StatelessWidget {
                   ),
                   Text(moleculeFormula).moleculeFormula,
                   if (structuralFormulaImagePath.isNotEmpty)
-                    SizedBox(height: AppRes.dimens.largeMargin),
+                    SizedBox(height: 30.h),
                   if (structuralFormulaImagePath.isNotEmpty)
-                    Image.asset(structuralFormulaImagePath, height: 145)
+                    Image.asset(structuralFormulaImagePath, height: 145.h)
                 ]),
               ),
             ),

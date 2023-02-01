@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
@@ -21,10 +22,7 @@ class AboutUsPage extends StatelessWidget {
         child: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
           child: Padding(
-            padding: EdgeInsets.symmetric(
-              vertical: AppRes.dimens.largeMargin,
-              horizontal: AppRes.dimens.appHorizontalMargin,
-            ),
+            padding: EdgeInsets.symmetric(vertical: 30.h, horizontal: 24.w),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -55,11 +53,11 @@ class AboutUsPage extends StatelessWidget {
 
                 InstitutesTopicWidget(
                   logoList: [
-                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
-                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
-                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
-                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
-                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100),
+                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100.h),
+                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100.h),
+                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100.h),
+                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100.h),
+                    SvgPicture.asset(AppRes.images.aboutTargets, height: 100.h),
                   ],
                 ),
               ],

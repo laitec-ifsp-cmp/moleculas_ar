@@ -8,24 +8,28 @@ class BackButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () {
-        Navigator.pop(context);
-      },
-      child: SvgPicture.asset(
-        AppRes.images.iconArrowLeft,
-        width: 20,
-        height: 20,
-      ),
-      style: ElevatedButton.styleFrom(
-        elevation: 5,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-        // TODO: Try to remove inner horizontal padding
-        fixedSize: const Size(64, 64),
-        backgroundColor: AppTheme.colors.background,
-        foregroundColor: AppTheme.colors.primaryLight,
-        shadowColor: AppTheme.colors.shadow,
-        side: BorderSide(width: 1, color: AppTheme.colors.light),
+    return SizedBox(
+      height: 48,
+      width: 48,
+      child: ElevatedButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: SvgPicture.asset(
+          AppRes.images.iconArrowLeft,
+          width: 20,
+          height: 20,
+        ),
+        style: ElevatedButton.styleFrom(
+          elevation: 5,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+          // TODO: Try to remove inner horizontal padding
+          padding: const EdgeInsets.all(0),
+          backgroundColor: AppTheme.colors.background,
+          foregroundColor: AppTheme.colors.primaryLight,
+          shadowColor: AppTheme.colors.shadow,
+          side: BorderSide(width: 1, color: AppTheme.colors.light),
+        ),
       ),
     );
   }

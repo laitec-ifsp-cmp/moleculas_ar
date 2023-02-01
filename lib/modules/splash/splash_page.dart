@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
@@ -7,8 +8,11 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(const Duration(seconds: 3)).then((value) =>
-        Navigator.pushReplacementNamed(context, "/on_boarding"));
+    Future.delayed(const Duration(seconds: 3)).then((value) {
+      print("width = ${MediaQuery.of(context).size.width}");
+      print("height = ${MediaQuery.of(context).size.height}");
+      return Navigator.pushReplacementNamed(context, "/on_boarding");
+    });
 
     return Scaffold(
       backgroundColor: AppTheme.colors.background,
@@ -18,8 +22,8 @@ class SplashPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(AppRes.images.appLogo, height: 192, width: 192),
-              SizedBox(height: AppRes.dimens.defaultVerticalMargin),
+              Image.asset(AppRes.images.appLogo, height: 192.h, width: 192.w),
+              SizedBox(height: 20.h),
               Text(AppRes.strings.appName).splashText,
             ],
           ),
@@ -30,7 +34,7 @@ class SplashPage extends StatelessWidget {
             child: CircularProgressIndicator(
               valueColor:
                   AlwaysStoppedAnimation<Color>(AppTheme.colors.primaryLight),
-              strokeWidth: 3,
+              strokeWidth: 3.w,
             ),
           ),
         ),

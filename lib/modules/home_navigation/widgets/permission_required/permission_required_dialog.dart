@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -22,13 +23,12 @@ class PermissionRequiredDialog extends StatelessWidget {
           },
           child: Text((AppRes.strings.appInfo).toUpperCase()).textButton,
           style: TextButton.styleFrom(
-            padding: EdgeInsets.symmetric(
-                horizontal: AppRes.dimens.appHorizontalMargin),
+            padding: EdgeInsets.symmetric(horizontal: 24.w),
           ),
         ),
       ],
       backgroundColor: AppTheme.colors.background,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.r)),
     );
   }
 }

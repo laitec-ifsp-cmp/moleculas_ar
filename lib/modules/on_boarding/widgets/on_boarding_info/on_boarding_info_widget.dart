@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class OnBoardingInfoWidget extends StatelessWidget {
@@ -18,16 +18,14 @@ class OnBoardingInfoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(
-        horizontal: AppRes.dimens.appHorizontalMargin,
-      ),
+      padding: EdgeInsets.symmetric(horizontal: 24.w),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SvgPicture.asset(image),
-          SizedBox(height: AppRes.dimens.hugeMargin),
+          SvgPicture.asset(image, height: 295.h),
+          SizedBox(height: 40.h),
           Text(title).title,
-          SizedBox(height: AppRes.dimens.defaultVerticalMargin),
+          SizedBox(height: 20.h),
           Text(summary).summary,
         ],
       ),

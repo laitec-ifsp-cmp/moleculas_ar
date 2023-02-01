@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/modules/home_about/pages/about/about_page.dart';
 import 'package:moleculas_ar/modules/home_about/pages/about_us/about_us_page.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
@@ -12,10 +13,7 @@ class HomeAboutPage extends StatelessWidget {
     return SingleChildScrollView(
       physics: const BouncingScrollPhysics(),
       child: Padding(
-        padding: EdgeInsets.symmetric(
-          vertical: AppRes.dimens.largeMargin,
-          horizontal: AppRes.dimens.appHorizontalMargin,
-        ),
+        padding: EdgeInsets.symmetric(vertical: 30.h, horizontal: 24.w),
         child: Column(
           children: [
             IconTextOutlinedButtonWidget(
@@ -32,7 +30,7 @@ class HomeAboutPage extends StatelessWidget {
                 );
               },
             ),
-            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
+            SizedBox(height: 20.h),
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAboutTargets,
               title: AppRes.strings.targets,
@@ -47,7 +45,7 @@ class HomeAboutPage extends StatelessWidget {
                 );
               },
             ),
-            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
+            SizedBox(height: 20.h),
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAbout,
               title: AppRes.strings.about,
@@ -56,7 +54,7 @@ class HomeAboutPage extends StatelessWidget {
                     MaterialPageRoute(builder: (_) => const AboutUsPage()));
               },
             ),
-            SizedBox(height: AppRes.dimens.defaultVerticalMargin),
+            SizedBox(height: 20.h),
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAboutFeedback,
               title: AppRes.strings.feedback,

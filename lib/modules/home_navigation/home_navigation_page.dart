@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/modules/home_about/home_about_page.dart';
 import 'package:moleculas_ar/modules/home_molecules/home_molecules_page.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
@@ -25,7 +26,7 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
     return Scaffold(
       backgroundColor: AppTheme.colors.background,
       appBar: AppBar(
-        toolbarHeight: AppRes.dimens.appBarHeight,
+        toolbarHeight: 88,
         backgroundColor: AppTheme.colors.background,
         elevation: 0,
         title: Text((_currentPage == 0)
@@ -49,11 +50,8 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 100,
-        margin: EdgeInsets.symmetric(
-          vertical: AppRes.dimens.defaultVerticalMargin,
-          horizontal: AppRes.dimens.appHorizontalMargin,
-        ),
+        height: 100.h,
+        margin: EdgeInsets.symmetric(vertical: 20.h, horizontal: 24.w),
         child: HomeBottomNavWidget(
           currentPage: _currentPage,
           onTapMolecules: () {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moleculas_ar/shared/res/app_res.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class DevInfoWidget extends StatelessWidget {
@@ -22,15 +22,15 @@ class DevInfoWidget extends StatelessWidget {
         Expanded(
           flex: 0,
           child: Container(
-            height: 60,
-            width: 60,
+            height: 60.h,
+            width: 60.w,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(image: AssetImage(imagePath)),
             ),
           ),
         ),
-        SizedBox(width: AppRes.dimens.smallMargin),
+        SizedBox(width: 10.h),
         Expanded(
           flex: 1,
           child: Column(

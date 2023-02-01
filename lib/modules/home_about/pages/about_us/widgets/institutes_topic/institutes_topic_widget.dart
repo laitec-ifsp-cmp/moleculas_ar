@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
@@ -16,13 +17,13 @@ class InstitutesTopicWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(AppRes.strings.loremIpsum).title,
-        SizedBox(height: AppRes.dimens.smallMargin),
+        SizedBox(height: 10.h),
         SizedBox(
           width: double.maxFinite,
           child: Wrap(
             alignment: WrapAlignment.spaceEvenly,
-            spacing: AppRes.dimens.smallMargin,
-            runSpacing: AppRes.dimens.smallMargin,
+            spacing: 10.h,
+            runSpacing: 10.h,
             children: logoList,
           ),
         )

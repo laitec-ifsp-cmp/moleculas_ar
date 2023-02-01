@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/app_state.dart';
 import 'package:moleculas_ar/modules/home_molecules/home_molecules_controller.dart';
 import 'package:moleculas_ar/modules/molecule_category/molecule_category_page.dart';
@@ -45,14 +46,11 @@ class _HomeMoleculesPageState extends State<HomeMoleculesPage> {
                 );
               },
             ),
-            padding: EdgeInsets.symmetric(
-              horizontal: AppRes.dimens.appHorizontalMargin,
-              vertical: AppRes.dimens.largeMargin,
-            ),
+            padding: EdgeInsets.symmetric(vertical: 30.h, horizontal: 24.w),
             scrollDirection: Axis.vertical,
             physics: const BouncingScrollPhysics(),
             separatorBuilder: (BuildContext context, int index) =>
-                SizedBox(height: AppRes.dimens.defaultVerticalMargin),
+                SizedBox(height: 20.h),
           )
         : ItemListShimmer(listLength: controller.moleculesCategories?.length);
   }

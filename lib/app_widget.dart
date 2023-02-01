@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/modules/ar_molecule_target/ar_molecule_target_page.dart';
 
 import 'modules/home_navigation/home_navigation_page.dart';
@@ -11,17 +12,26 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: AppRes.strings.appName,
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
-      debugShowCheckedModeBanner: false,
-      initialRoute: "/splash",
-      routes: {
-        "/splash": (context) => const SplashPage(),
-        "/on_boarding": (context) => const OnBoardingPage(),
-        "/home_navigation": (context) => const HomeNavigationPage(),
-        "/ar_molecule_target": (context) => const ArMoleculeTargetPage(),
+    return ScreenUtilInit(
+      designSize: const Size(432, 936),
+      minTextAdapt: true,
+      builder: (BuildContext context, Widget? child) {
+        return MaterialApp(
+          title: AppRes.strings.appName,
+          theme: ThemeData(
+            primarySwatch: Colors.deepPurple,
+          ),
+          debugShowCheckedModeBanner: false,
+          home: child,
+          routes: {
+            "/splash": (context) => const SplashPage(),
+            "/on_boarding": (context) => const OnBoardingPage(),
+            "/home_navigation": (context) => const HomeNavigationPage(),
+            "/ar_molecule_target": (context) => const ArMoleculeTargetPage(),
+          },
+        );
       },
+      child: const SplashPage(),
     );
   }
 }
