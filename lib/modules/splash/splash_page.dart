@@ -13,7 +13,6 @@ class SplashPage extends StatelessWidget {
     });
 
     return Scaffold(
-      backgroundColor: AppTheme.colors.background,
       body: Column(children: [
         Expanded(
           flex: 3,

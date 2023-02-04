@@ -19,7 +19,6 @@ class MoleculeCategoryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.colors.background,
       appBar: AppBarWidget(title: appBarTitle),
       body: BodyGradientMarginWidget(
         child: ListView.separated(

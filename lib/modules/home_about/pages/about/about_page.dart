@@ -22,7 +22,6 @@ class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.colors.background,
       appBar: AppBarWidget(),
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 40.h, horizontal: 24.w),

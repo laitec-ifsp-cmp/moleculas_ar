@@ -24,7 +24,6 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.colors.background,
       appBar: AppBar(
         toolbarHeight: 88,
         backgroundColor: AppTheme.colors.background,

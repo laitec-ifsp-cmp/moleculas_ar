@@ -21,7 +21,6 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.colors.background,
       appBar: AppBar(
         backgroundColor: AppTheme.colors.background,
         elevation: 0,

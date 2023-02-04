@@ -14,7 +14,6 @@ class AboutUsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.colors.background,
       appBar: AppBarWidget(),
       body: BodyGradientMarginWidget(
         child: SingleChildScrollView(

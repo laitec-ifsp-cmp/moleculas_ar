@@ -35,6 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_cube: ^0.1.1
+  flutter_launcher_icons: ^0.11.0
   flutter_screenutil: ^5.6.1
   flutter_svg: ^1.0.3
   flutter_unity_widget: ^2022.1.7+1
@@ -42,6 +43,11 @@ dependencies:
   permission_handler: ^10.0.0
   shimmer: ^2.0.0
   url_launcher: ^6.1.8
+
+flutter_icons:
+  image_path: "assets/images/app_logo.png"
+  android: true
+  ios: true
 
 dev_dependencies:
   flutter_test:

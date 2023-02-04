@@ -16,7 +16,6 @@ class _ArMoleculeTargetPageState extends State<ArMoleculeTargetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.colors.background,
       appBar: AppBarWidget(),
       body: UnityWidget(
         onUnityCreated: onUnityCreated,

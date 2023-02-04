@@ -22,7 +22,6 @@ class ArMoleculePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.colors.background,
       appBar: AppBarWidget(),
       body: Stack(
         children: [
