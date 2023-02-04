@@ -77,8 +77,8 @@ class AppTextStyles implements IAppTextStyles {
       );
 
   @override
-  TextStyle get itemSubTitle => GoogleFonts.poppins(
-        fontSize: 12.sp,
+  TextStyle get itemSubTitle => GoogleFonts.prompt(
+        fontSize: 14.sp,
         color: AppTheme.colors.oceanGreen,
         fontWeight: FontWeight.w600, // Semi-bold
       );
@@ -91,7 +91,7 @@ class AppTextStyles implements IAppTextStyles {
       );
 
   @override
-  TextStyle get moleculeFormula => GoogleFonts.poppins(
+  TextStyle get moleculeFormula => GoogleFonts.prompt(
         fontSize: 16.sp,
         color: AppTheme.colors.oceanGreen,
         fontWeight: FontWeight.w600, // Semi-bold
