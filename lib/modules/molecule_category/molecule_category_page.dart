@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/modules/ar_molecule/ar_molecule_page.dart';
 import 'package:moleculas_ar/shared/models/molecule_model.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
-import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
 class MoleculeCategoryPage extends StatelessWidget {

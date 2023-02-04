@@ -22,7 +22,8 @@ class BackButtonWidget extends StatelessWidget {
         ),
         style: ElevatedButton.styleFrom(
           elevation: 5,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
           padding: const EdgeInsets.all(0),
           backgroundColor: AppTheme.colors.background,
           foregroundColor: AppTheme.colors.primaryLight,

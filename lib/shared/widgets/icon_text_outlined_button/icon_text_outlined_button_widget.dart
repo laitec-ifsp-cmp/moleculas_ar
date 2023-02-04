@@ -45,7 +45,8 @@ class IconTextOutlinedButtonWidget extends StatelessWidget {
         foregroundColor: AppTheme.colors.primaryLight,
         elevation: 5,
         side: BorderSide(width: 1, color: AppTheme.colors.stroke),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.r)),
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.r)),
       ),
     );
   }

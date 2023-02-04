@@ -21,7 +21,7 @@ class AppWidget extends StatelessWidget {
           title: AppRes.strings.appName,
           theme: ThemeData(
             primaryColor: AppTheme.colors.background,
-            scaffoldBackgroundColor: AppTheme.colors.background
+            scaffoldBackgroundColor: AppTheme.colors.background,
           ),
           debugShowCheckedModeBanner: false,
           home: child,
