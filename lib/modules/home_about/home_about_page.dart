@@ -4,6 +4,7 @@ import 'package:moleculas_ar/modules/home_about/pages/about/about_page.dart';
 import 'package:moleculas_ar/modules/home_about/pages/about_us/about_us_page.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeAboutPage extends StatelessWidget {
   const HomeAboutPage({Key? key}) : super(key: key);
@@ -19,31 +20,37 @@ class HomeAboutPage extends StatelessWidget {
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAboutBook,
               title: AppRes.strings.eBook,
-              onPressed: () {
-                goToAboutPage(
-                  context: context,
-                  imagePath: AppRes.images.aboutEBook,
-                  title: AppRes.strings.accessEBook,
-                  // TODO: Update summary and onPressedButton of eBook option
-                  summary: AppRes.strings.shortLoremIpsum,
-                  onPressedButton: () {},
-                );
-              },
+              onPressed: () => goToAboutPage(
+                context: context,
+                imagePath: AppRes.images.aboutEBook,
+                title: AppRes.strings.accessEBook,
+                summary:
+                    "Serão apresentados textos complementares referentes ao "
+                    "conceito de realidade aumentada e os conceitos químicos "
+                    "abordados",
+                onPressedButton: null,
+              ),
             ),
             SizedBox(height: 20.h),
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAboutTargets,
               title: AppRes.strings.targets,
-              onPressed: () {
-                goToAboutPage(
-                  context: context,
-                  imagePath: AppRes.images.aboutTargets,
-                  title: AppRes.strings.downloadTargets,
-                  // TODO: Update summary and onPressedButton of Targets option
-                  summary: AppRes.strings.shortLoremIpsum,
-                  onPressedButton: () {},
-                );
-              },
+              onPressed: () => goToAboutPage(
+                context: context,
+                imagePath: AppRes.images.aboutTargets,
+                title: AppRes.strings.downloadTargets,
+                summary:
+                    "Para a visualização e análise das estruturas químicas, "
+                    "os targets correspondem aos respectivos objetos "
+                    "moleculares para a observação 3D em Realidade Aumentada",
+                onPressedButton: () async {
+                  Uri uri = Uri.parse(
+                      "https://drive.google.com/file/d/1_T4XpAO_gKZyNNw8P0ljor6jti92W4_e/view?usp=sharing");
+                  if (await canLaunchUrl(uri)) {
+                    await launchUrl(uri, mode: LaunchMode.externalApplication);
+                  }
+                },
+              ),
             ),
             SizedBox(height: 20.h),
             IconTextOutlinedButtonWidget(
@@ -58,16 +65,13 @@ class HomeAboutPage extends StatelessWidget {
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAboutFeedback,
               title: AppRes.strings.feedback,
-              onPressed: () {
-                goToAboutPage(
-                  context: context,
-                  imagePath: AppRes.images.aboutFeedback,
-                  // TODO: Update summary and onPressedButton of Feedback option
-                  title: AppRes.strings.giveFeedback,
-                  summary: AppRes.strings.shortLoremIpsum,
-                  onPressedButton: () {},
-                );
-              },
+              onPressed: () => goToAboutPage(
+                context: context,
+                imagePath: AppRes.images.aboutFeedback,
+                title: AppRes.strings.giveFeedback,
+                summary: "",
+                onPressedButton: null,
+              ),
             ),
           ],
         ),
@@ -80,7 +84,7 @@ class HomeAboutPage extends StatelessWidget {
     required String imagePath,
     required String title,
     required String summary,
-    required VoidCallback onPressedButton,
+    required VoidCallback? onPressedButton,
   }) {
     Navigator.push(
       context,

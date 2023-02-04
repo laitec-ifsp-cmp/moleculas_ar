@@ -9,8 +9,6 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Future.delayed(const Duration(seconds: 3)).then((value) {
-      print("width = ${MediaQuery.of(context).size.width}");
-      print("height = ${MediaQuery.of(context).size.height}");
       return Navigator.pushReplacementNamed(context, "/on_boarding");
     });
 

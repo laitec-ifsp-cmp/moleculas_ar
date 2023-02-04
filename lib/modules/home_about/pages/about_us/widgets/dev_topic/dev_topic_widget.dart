@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class DevTopicWidget extends StatelessWidget {
@@ -16,7 +15,7 @@ class DevTopicWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(AppRes.strings.loremIpsum).title,
+        const Text("Desenvolvedores").title,
         SizedBox(height: 10.h),
         ListView.separated(
           itemCount: devInfoList.length,

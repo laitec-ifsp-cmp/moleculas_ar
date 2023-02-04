@@ -66,7 +66,7 @@ class AppStrings implements IAppStrings {
   String get permissionRequired => "Permissão necessária";
 
   @override
-  String get permissionRequiredExplanation => "AR Moléculas precisa de permissão para acessar a câmera do dispositivo. Selecione 'Permissões' nas informações do aplicativo para ativá-la novamente.";
+  String get permissionRequiredExplanation => "AR Moléculas precisa de permissão para acessar a câmera do dispositivo. Selecione 'Permissões' nas informações do aplicativo para permitir o acesso.";
 
   @override
   String get shortLoremIpsum => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore";

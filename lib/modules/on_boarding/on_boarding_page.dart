@@ -47,22 +47,25 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           });
         },
         children: [
-          // TODO: Update on boarding information with final content.
-          // TODO - Strings: Strings of on boarding will be set after definitions.
           OnBoardingInfoWidget(
             image: AppRes.images.onBoardingDna,
-            title: "Introdução",
-            summary: AppRes.strings.shortLoremIpsum,
+            title: "",
+            summary:
+                "Este aplicativo fornece uma solução baseada em tecnologia "
+                "móvel para a compreensão quanto a estruturas químicas e biológicas",
           ),
           OnBoardingInfoWidget(
             image: AppRes.images.onBoardingDna3d,
-            title: "Introdução",
-            summary: AppRes.strings.shortLoremIpsum,
+            title: "",
+            summary: "O aplicativo ilustra as principais estruturas para "
+                "geometria molecular, isomeria e bioquímica",
           ),
           OnBoardingInfoWidget(
             image: AppRes.images.onBoardingDnaHolo,
-            title: "Introdução",
-            summary: AppRes.strings.shortLoremIpsum,
+            title: "",
+            summary:
+                "O aplicativo implementou mecanismos de padrões impressos, "
+                "recursos de interatividade 3D e tecnologia de Realidade Aumentada",
           ),
         ],
       ),

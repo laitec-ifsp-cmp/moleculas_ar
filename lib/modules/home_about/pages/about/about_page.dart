@@ -9,7 +9,7 @@ class AboutPage extends StatelessWidget {
   final String imagePath;
   final String title;
   final String summary;
-  final VoidCallback onPressedButton;
+  final VoidCallback? onPressedButton;
 
   const AboutPage({
     Key? key,
@@ -32,12 +32,15 @@ class AboutPage extends StatelessWidget {
             SvgPicture.asset(imagePath, height: 295.h, width: 295.w),
             SizedBox(height: 40.h),
             Text(title).title,
-            SizedBox(height: 20.h),
-            Text(summary).summary,
+            if (summary.isNotEmpty) SizedBox(height: 20.h),
+            if (summary.isNotEmpty) Text(summary).summary,
             SizedBox(height: 40.h),
             ElevatedButton(
               onPressed: onPressedButton,
-              child: Text(AppRes.strings.clickHere).textFilledButton,
+              child: Text(onPressedButton != null
+                      ? AppRes.strings.clickHere
+                      : "Em breve")
+                  .textFilledButton,
               style: ElevatedButton.styleFrom(
                 elevation: 5,
                 shape: RoundedRectangleBorder(

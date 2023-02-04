@@ -24,8 +24,8 @@ class OnBoardingInfoWidget extends StatelessWidget {
         children: [
           SvgPicture.asset(image, height: 295.h),
           SizedBox(height: 40.h),
-          Text(title).title,
-          SizedBox(height: 20.h),
+          // Text(title).title,
+          // SizedBox(height: 20.h),
           Text(summary).summary,
         ],
       ),
