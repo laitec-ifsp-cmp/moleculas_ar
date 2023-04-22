@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
-class InstitutesTopicWidget extends StatelessWidget {
+class LogosTopicWidget extends StatelessWidget {
+  final Text title;
   final List<Widget> logoList;
 
-  const InstitutesTopicWidget({
+  const LogosTopicWidget({
     Key? key,
+    required this.title,
     required this.logoList,
   }) : super(key: key);
 
@@ -15,7 +16,7 @@ class InstitutesTopicWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text("Instituições").title,
+        title,
         SizedBox(height: 10.h),
         SizedBox(
           width: double.maxFinite,

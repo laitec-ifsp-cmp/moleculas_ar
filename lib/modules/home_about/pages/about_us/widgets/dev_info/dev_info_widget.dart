@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:moleculas_ar/shared/widgets/no_format_link/no_format_link_widget.dart';
 
 class DevInfoWidget extends StatelessWidget {
   final String imagePath;
   final String name;
-  final String description;
-  final String lattes;
+  final String? description;
+  final String? lattes;
+  final String? linkedIn;
 
   const DevInfoWidget({
     Key? key,
     required this.imagePath,
     required this.name,
-    required this.description,
-    required this.lattes,
+    this.description,
+    this.lattes,
+    this.linkedIn,
   }) : super(key: key);
 
   @override
@@ -41,26 +42,17 @@ class DevInfoWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(name).itemTitle,
-              Text(description).description,
-              InkWell(
-                onTap: () async {
-                  Uri uri = Uri.parse(lattes);
-                  if (await canLaunchUrl(uri)) {
-                    await launchUrl(uri, mode: LaunchMode.externalApplication);
-                  }
-                },
-                child: Text(
-                  lattes,
-                  style: GoogleFonts.poppins(
-                    fontSize: 12.sp,
-                    color: AppTheme.colors.textSecondary,
-                    fontWeight: FontWeight.normal,
-                    decoration: TextDecoration.underline,
-                  ),
+              if (description != null) Text(description!).description,
+              if (lattes != null)
+                NoFormatLinkWidget(
+                  url: lattes!,
+                  child: Text(lattes!).linkText,
                 ),
-                highlightColor: Colors.transparent,
-                splashColor: Colors.transparent,
-              )
+              if (linkedIn != null)
+                NoFormatLinkWidget(
+                  url: linkedIn!,
+                  child: Text(linkedIn!).linkText,
+                ),
             ],
           ),
         ),

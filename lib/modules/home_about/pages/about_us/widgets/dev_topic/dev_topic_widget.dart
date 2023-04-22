@@ -26,7 +26,6 @@ class DevTopicWidget extends StatelessWidget {
           separatorBuilder: (BuildContext context, int index) =>
               SizedBox(height: 10.h),
         ),
-        SizedBox(height: 30.h),
       ],
     );
   }

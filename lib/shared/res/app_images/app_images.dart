@@ -3,7 +3,6 @@ abstract class IAppImages {
   String get aboutFeedback;
   String get appLogo;
   String get aboutTargets;
-  String get cycloniteGeometricStructure;
   String get iconAbout;
   String get iconAboutBook;
   String get iconAboutFeedback;
@@ -33,9 +32,6 @@ class AppImages implements IAppImages {
 
   @override
   String get aboutTargets => "assets/images/about_targets.svg";
-
-  @override
-  String get cycloniteGeometricStructure => "assets/images/cyclonite_geometric_structure.png";
 
   @override
   String get iconAbout => "assets/images/icon_about.png";

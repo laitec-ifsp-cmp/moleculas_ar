@@ -8,12 +8,14 @@ abstract class IAppTextStyles {
   TextStyle get description;
   TextStyle get splashText;
   TextStyle get title;
+  TextStyle get titleSmall;
   TextStyle get summary;
   TextStyle get textButton;
   TextStyle get homeTitle;
   TextStyle get appBarTitle;
   TextStyle get itemTitle;
   TextStyle get itemSubTitle;
+  TextStyle get linkText;
   TextStyle get moleculeName;
   TextStyle get moleculeFormula;
   TextStyle get textFilledButton;
@@ -40,6 +42,13 @@ class AppTextStyles implements IAppTextStyles {
         color: AppTheme.colors.textPrimary,
         fontWeight: FontWeight.w600, // Semi-bold
       );
+
+  @override
+  TextStyle get titleSmall => GoogleFonts.poppins(
+    fontSize: 14.sp,
+    color: AppTheme.colors.textPrimary,
+    fontWeight: FontWeight.w600, // Semi-bold
+  );
 
   @override
   TextStyle get summary => GoogleFonts.poppins(
@@ -81,6 +90,14 @@ class AppTextStyles implements IAppTextStyles {
         fontSize: 14.sp,
         color: AppTheme.colors.oceanGreen,
         fontWeight: FontWeight.w600, // Semi-bold
+      );
+
+  @override
+  TextStyle get linkText => GoogleFonts.poppins(
+        fontSize: 12.sp,
+        color: AppTheme.colors.textSecondary,
+        fontWeight: FontWeight.normal,
+        decoration: TextDecoration.underline,
       );
 
   @override
