@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:moleculas_ar/modules/ar_molecule/ar_molecule_page.dart';
+import 'package:moleculas_ar/modules/molecule_object/molecule_object_page.dart';
 import 'package:moleculas_ar/shared/models/molecule_model.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
@@ -32,7 +32,7 @@ class MoleculeCategoryPage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (_) => ArMoleculePage(
+                  builder: (_) => MoleculeObjectPage(
                     name: molecules[i].name,
                     formula: molecules[i].molecularFormula,
                     objectPath: molecules[i].objectPath,

@@ -5,13 +5,13 @@ import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
 import 'widget/molecule_info_sheet/molecule_info_sheet_widget.dart';
 
-class ArMoleculePage extends StatelessWidget {
+class MoleculeObjectPage extends StatelessWidget {
   final String name;
   final String formula;
   final String objectPath;
   final String structuralFormulaImagePath;
 
-  const ArMoleculePage({
+  const MoleculeObjectPage({
     Key? key,
     required this.name,
     required this.formula,

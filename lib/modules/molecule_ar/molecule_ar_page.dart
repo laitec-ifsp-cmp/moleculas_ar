@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_unity_widget/flutter_unity_widget.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
-class ArMoleculeTargetPage extends StatefulWidget {
-  const ArMoleculeTargetPage({Key? key}) : super(key: key);
+class MoleculeArPage extends StatefulWidget {
+  const MoleculeArPage({Key? key}) : super(key: key);
 
   @override
-  State<ArMoleculeTargetPage> createState() => _ArMoleculeTargetPageState();
+  State<MoleculeArPage> createState() => _MoleculeArPageState();
 }
 
-class _ArMoleculeTargetPageState extends State<ArMoleculeTargetPage> {
+class _MoleculeArPageState extends State<MoleculeArPage> {
   UnityWidgetController? _unityWidgetController;
 
   @override
