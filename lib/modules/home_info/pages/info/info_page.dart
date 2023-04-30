@@ -5,13 +5,13 @@ import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/app_bar/app_bar_widget.dart';
 
-class AboutPage extends StatelessWidget {
+class InfoPage extends StatelessWidget {
   final String imagePath;
   final String title;
   final String summary;
   final VoidCallback? onPressedButton;
 
-  const AboutPage({
+  const InfoPage({
     Key? key,
     required this.imagePath,
     required this.title,

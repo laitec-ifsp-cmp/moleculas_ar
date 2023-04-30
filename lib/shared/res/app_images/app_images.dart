@@ -10,7 +10,7 @@ abstract class IAppImages {
   String get iconArrowLeft;
   String get iconArrowRight;
   String get iconDnaMolecule;
-  String get iconGear;
+  String get iconMenu;
   String get iconMolecule;
   String get iconSingleMolecule;
   String get iconTarget;
@@ -55,7 +55,7 @@ class AppImages implements IAppImages {
   String get iconDnaMolecule => "assets/images/icon_dna_molecule.png";
 
   @override
-  String get iconGear => "assets/images/icon_gear.svg";
+  String get iconMenu => "assets/images/icon_menu.svg";
 
   @override
   String get iconMolecule => "assets/images/icon_molecule.svg";

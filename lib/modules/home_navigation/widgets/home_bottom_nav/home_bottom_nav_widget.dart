@@ -48,8 +48,7 @@ class HomeBottomNavWidget extends StatelessWidget {
         IconButton(
           onPressed: onTapSettings,
           icon: SvgPicture.asset(
-            AppRes.images.iconGear,
-            height: 24.h,
+            AppRes.images.iconMenu,
             width: 24.w,
             color: (currentPage == 1)
                 ? AppTheme.colors.primary

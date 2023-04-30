@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:moleculas_ar/modules/home_about/home_about_page.dart';
+import 'package:moleculas_ar/modules/home_info/home_info_page.dart';
 import 'package:moleculas_ar/modules/home_molecules/home_molecules_page.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
@@ -30,7 +30,7 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
         elevation: 0,
         title: Text((_currentPage == 0)
             ? AppRes.strings.molecules
-            : AppRes.strings.about),
+            : AppRes.strings.info),
         titleTextStyle: AppTheme.textStyles.homeTitle,
       ),
       body: BodyGradientMarginWidget(
@@ -44,7 +44,7 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
           },
           children: const [
             HomeMoleculesPage(),
-            HomeAboutPage(),
+            HomeInfoPage(),
           ],
         ),
       ),

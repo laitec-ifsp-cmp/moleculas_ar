@@ -8,6 +8,7 @@ abstract class IAppStrings {
   String get eBook;
   String get feedback;
   String get giveFeedback;
+  String get info;
   String get longLoremIpsum;
   String get loremIpsum;
   String get mediumLoremIpsum;
@@ -46,6 +47,9 @@ class AppStrings implements IAppStrings {
 
   @override
   String get giveFeedback => "Avalie o aplicativo";
+
+  @override
+  String get info => "Informações";
 
   @override
   String get skip => "Pular";

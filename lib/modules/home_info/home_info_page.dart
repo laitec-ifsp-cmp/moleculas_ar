@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:moleculas_ar/modules/home_about/pages/about/about_page.dart';
-import 'package:moleculas_ar/modules/home_about/pages/about_us/about_us_page.dart';
+import 'package:moleculas_ar/modules/home_info/pages/about_us/about_us_page.dart';
+import 'package:moleculas_ar/modules/home_info/pages/info/info_page.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class HomeAboutPage extends StatelessWidget {
-  const HomeAboutPage({Key? key}) : super(key: key);
+class HomeInfoPage extends StatelessWidget {
+  const HomeInfoPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class HomeAboutPage extends StatelessWidget {
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAboutBook,
               title: AppRes.strings.eBook,
-              onPressed: () => goToAboutPage(
+              onPressed: () => goToInfoPage(
                 context: context,
                 imagePath: AppRes.images.aboutEBook,
                 title: AppRes.strings.accessEBook,
@@ -35,7 +35,7 @@ class HomeAboutPage extends StatelessWidget {
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAboutTargets,
               title: AppRes.strings.targets,
-              onPressed: () => goToAboutPage(
+              onPressed: () => goToInfoPage(
                 context: context,
                 imagePath: AppRes.images.aboutTargets,
                 title: AppRes.strings.downloadTargets,
@@ -65,7 +65,7 @@ class HomeAboutPage extends StatelessWidget {
             IconTextOutlinedButtonWidget(
               imagePath: AppRes.images.iconAboutFeedback,
               title: AppRes.strings.feedback,
-              onPressed: () => goToAboutPage(
+              onPressed: () => goToInfoPage(
                 context: context,
                 imagePath: AppRes.images.aboutFeedback,
                 title: AppRes.strings.giveFeedback,
@@ -79,7 +79,7 @@ class HomeAboutPage extends StatelessWidget {
     );
   }
 
-  void goToAboutPage({
+  void goToInfoPage({
     required dynamic context,
     required String imagePath,
     required String title,
@@ -89,7 +89,7 @@ class HomeAboutPage extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (_) => AboutPage(
+        builder: (_) => InfoPage(
           imagePath: imagePath,
           title: title,
           summary: summary,
