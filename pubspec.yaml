@@ -41,6 +41,7 @@ dependencies:
   flutter_unity_widget: ^2022.1.7+1
   google_fonts: ^2.2.0
   permission_handler: ^10.0.0
+  shared_preferences: ^2.1.0
   shimmer: ^2.0.0
   url_launcher: ^6.1.8
 
