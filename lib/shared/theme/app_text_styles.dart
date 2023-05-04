@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'app_theme.dart';
@@ -7,12 +8,14 @@ abstract class IAppTextStyles {
   TextStyle get description;
   TextStyle get splashText;
   TextStyle get title;
+  TextStyle get titleSmall;
   TextStyle get summary;
-  TextStyle get jumpOnBoarding;
+  TextStyle get textButton;
   TextStyle get homeTitle;
   TextStyle get appBarTitle;
   TextStyle get itemTitle;
   TextStyle get itemSubTitle;
+  TextStyle get linkText;
   TextStyle get moleculeName;
   TextStyle get moleculeFormula;
   TextStyle get textFilledButton;
@@ -21,42 +24,49 @@ abstract class IAppTextStyles {
 class AppTextStyles implements IAppTextStyles {
   @override
   TextStyle get description => GoogleFonts.poppins(
-    fontSize: 12,
-    color: AppTheme.colors.textSecondary,
-    fontWeight: FontWeight.normal,
-  );
+        fontSize: 12.sp,
+        color: AppTheme.colors.textSecondary,
+        fontWeight: FontWeight.normal,
+      );
 
   @override
   TextStyle get splashText => GoogleFonts.poppins(
-        fontSize: 26,
+        fontSize: 26.sp,
         color: AppTheme.colors.textPrimary,
         fontWeight: FontWeight.bold, // Semi-bold
       );
 
   @override
   TextStyle get title => GoogleFonts.poppins(
-        fontSize: 22,
+        fontSize: 22.sp,
         color: AppTheme.colors.textPrimary,
         fontWeight: FontWeight.w600, // Semi-bold
       );
 
   @override
+  TextStyle get titleSmall => GoogleFonts.poppins(
+    fontSize: 14.sp,
+    color: AppTheme.colors.textPrimary,
+    fontWeight: FontWeight.w600, // Semi-bold
+  );
+
+  @override
   TextStyle get summary => GoogleFonts.poppins(
-        fontSize: 14,
+        fontSize: 14.sp,
         color: AppTheme.colors.textSecondary,
         fontWeight: FontWeight.normal,
       );
 
   @override
-  TextStyle get jumpOnBoarding => GoogleFonts.poppins(
-        fontSize: 12,
+  TextStyle get textButton => GoogleFonts.poppins(
+        fontSize: 12.sp,
         color: AppTheme.colors.darkOrange,
         fontWeight: FontWeight.w600, // Semi-bold
       );
 
   @override
   TextStyle get homeTitle => GoogleFonts.poppins(
-        fontSize: 24,
+        fontSize: 24.sp,
         color: AppTheme.colors.textPrimary,
         fontWeight: FontWeight.bold,
       );
@@ -70,36 +80,44 @@ class AppTextStyles implements IAppTextStyles {
 
   @override
   TextStyle get itemTitle => GoogleFonts.poppins(
-        fontSize: 16,
+        fontSize: 16.sp,
         color: AppTheme.colors.textPrimary,
         fontWeight: FontWeight.bold,
       );
 
   @override
-  TextStyle get itemSubTitle => GoogleFonts.poppins(
-        fontSize: 12,
+  TextStyle get itemSubTitle => GoogleFonts.prompt(
+        fontSize: 14.sp,
         color: AppTheme.colors.oceanGreen,
         fontWeight: FontWeight.w600, // Semi-bold
       );
 
   @override
+  TextStyle get linkText => GoogleFonts.poppins(
+        fontSize: 12.sp,
+        color: AppTheme.colors.textSecondary,
+        fontWeight: FontWeight.normal,
+        decoration: TextDecoration.underline,
+      );
+
+  @override
   TextStyle get moleculeName => GoogleFonts.poppins(
-        fontSize: 18,
+        fontSize: 18.sp,
         color: AppTheme.colors.textPrimary,
         fontWeight: FontWeight.bold,
       );
 
   @override
-  TextStyle get moleculeFormula => GoogleFonts.poppins(
-        fontSize: 16,
+  TextStyle get moleculeFormula => GoogleFonts.prompt(
+        fontSize: 16.sp,
         color: AppTheme.colors.oceanGreen,
         fontWeight: FontWeight.w600, // Semi-bold
       );
 
   @override
   TextStyle get textFilledButton => GoogleFonts.poppins(
-    fontSize: 16,
-    color: AppTheme.colors.background,
-    fontWeight: FontWeight.w600, // Semi-bold
-  );
+        fontSize: 16.sp,
+        color: AppTheme.colors.background,
+        fontWeight: FontWeight.w600, // Semi-bold
+      );
 }

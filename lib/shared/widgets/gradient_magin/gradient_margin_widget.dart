@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class GradientMarginWidget extends StatelessWidget {
@@ -34,7 +35,7 @@ class GradientMarginWidget extends StatelessWidget {
       left: 0,
       child: Container(
         width: double.maxFinite,
-        height: 30,
+        height: 30.h,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
@@ -42,7 +43,7 @@ class GradientMarginWidget extends StatelessWidget {
             colors: (top == 0) ? topColorList : bottomColorList,
           ),
         ),
-        child: Container(height: 30),
+        child: Container(height: 30.h),
       ),
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moleculas_ar/shared/res/app_res.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:shimmer/shimmer.dart';
 
@@ -19,29 +19,26 @@ class ItemListShimmer extends StatelessWidget {
         highlightColor: AppTheme.colors.primaryLight,
         child: Container(
           width: double.maxFinite,
-          height: AppRes.dimens.buttonMinHeight,
+          height: 80.h,
           decoration: BoxDecoration(
             color: AppTheme.colors.light,
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(15.r),
             border: Border.all(width: 1, color: AppTheme.colors.stroke),
             boxShadow: [
               BoxShadow(
                 color: AppTheme.colors.shadow,
                 blurRadius: 5,
-                offset: Offset(0, 5)
+                offset: const Offset(0, 5),
               ),
-            ]
+            ],
           ),
         ),
       ),
-      padding: EdgeInsets.symmetric(
-        horizontal: AppRes.dimens.appHorizontalMargin,
-        vertical: AppRes.dimens.largeMargin,
-      ),
+      padding: EdgeInsets.symmetric(vertical: 30.h, horizontal: 24.w),
       scrollDirection: Axis.vertical,
-      physics: BouncingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       separatorBuilder: (BuildContext context, int index) =>
-          SizedBox(height: AppRes.dimens.defaultVerticalMargin),
+          SizedBox(height: 20.h),
     );
   }
 }

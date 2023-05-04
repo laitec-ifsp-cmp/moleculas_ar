@@ -1,8 +1,8 @@
 abstract class IAppImages {
   String get aboutEBook;
   String get aboutFeedback;
+  String get appLogo;
   String get aboutTargets;
-  String get cycloniteGeometricStructure;
   String get iconAbout;
   String get iconAboutBook;
   String get iconAboutFeedback;
@@ -10,12 +10,11 @@ abstract class IAppImages {
   String get iconArrowLeft;
   String get iconArrowRight;
   String get iconDnaMolecule;
-  String get iconGear;
+  String get iconMenu;
   String get iconMolecule;
   String get iconSingleMolecule;
   String get iconTarget;
   String get iconThreeMolecules;
-  String get logo;
   String get onBoardingDna;
   String get onBoardingDna3d;
   String get onBoardingDnaHolo;
@@ -29,10 +28,10 @@ class AppImages implements IAppImages {
   String get aboutFeedback => "assets/images/about_feedback.svg";
 
   @override
-  String get aboutTargets => "assets/images/about_targets.svg";
+  String get appLogo => "assets/images/app_logo.png";
 
   @override
-  String get cycloniteGeometricStructure => "assets/images/cyclonite_geometric_structure.png";
+  String get aboutTargets => "assets/images/about_targets.svg";
 
   @override
   String get iconAbout => "assets/images/icon_about.png";
@@ -56,7 +55,7 @@ class AppImages implements IAppImages {
   String get iconDnaMolecule => "assets/images/icon_dna_molecule.png";
 
   @override
-  String get iconGear => "assets/images/icon_gear.svg";
+  String get iconMenu => "assets/images/icon_menu.svg";
 
   @override
   String get iconMolecule => "assets/images/icon_molecule.svg";
@@ -69,9 +68,6 @@ class AppImages implements IAppImages {
 
   @override
   String get iconThreeMolecules => "assets/images/icon_three_molecules.png";
-
-  @override
-  String get logo => "assets/images/logo.png";
 
   @override
   String get onBoardingDna => "assets/images/on_boarding_dna.svg";

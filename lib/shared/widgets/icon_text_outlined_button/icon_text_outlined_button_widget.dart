@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moleculas_ar/shared/res/app_res.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
 class IconTextOutlinedButtonWidget extends StatelessWidget {
@@ -22,8 +21,8 @@ class IconTextOutlinedButtonWidget extends StatelessWidget {
     return OutlinedButton(
       onPressed: onPressed,
       child: Row(children: [
-        Image.asset(imagePath, height: 40, width: 40),
-        SizedBox(width: AppRes.dimens.defaultVerticalMargin),
+        Image.asset(imagePath, height: 40.h, width: 40.w),
+        SizedBox(width: 20.w),
         Expanded(
           child: RichText(
             text: TextSpan(children: <TextSpan>[
@@ -38,15 +37,16 @@ class IconTextOutlinedButtonWidget extends StatelessWidget {
         ),
       ]),
       style: OutlinedButton.styleFrom(
-        padding: EdgeInsets.all(20),
-        minimumSize: Size.fromHeight(AppRes.dimens.buttonMinHeight),
-        fixedSize: Size.fromWidth(double.maxFinite),
-        primary: AppTheme.colors.primaryLight,
+        padding: EdgeInsets.all(20.r),
+        minimumSize: Size.fromHeight(80.h),
+        fixedSize: const Size.fromWidth(double.maxFinite),
         shadowColor: AppTheme.colors.shadow,
         backgroundColor: AppTheme.colors.background,
+        foregroundColor: AppTheme.colors.primaryLight,
         elevation: 5,
         side: BorderSide(width: 1, color: AppTheme.colors.stroke),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.r)),
       ),
     );
   }

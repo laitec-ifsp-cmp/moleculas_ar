@@ -472,11 +472,11 @@ static const Il2CppSequencePointSourceFile g_sequencePointSourceFiles[] = {
 { "", { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} }, //0 
 { "C:\\src\\projects\\moleculas_ar\\unity\\ar_molecules\\Assets\\Resources\\CSharpscaling.cs", { 217, 170, 59, 112, 105, 107, 23, 218, 94, 172, 90, 75, 92, 220, 63, 1} }, //1 
 { "C:\\src\\projects\\moleculas_ar\\unity\\ar_molecules\\Assets\\Resources\\DragObject1.cs", { 9, 48, 111, 252, 42, 255, 37, 51, 71, 160, 33, 234, 9, 223, 47, 21} }, //2 
-{ "C:\\src\\projects\\moleculas_ar\\unity\\ar_molecules\\Assets\\Resources\\onClickForScaling.cs", { 132, 122, 107, 90, 94, 138, 164, 33, 255, 13, 51, 75, 88, 27, 241, 117} }, //3 
+{ "C:\\src\\projects\\moleculas_ar\\unity\\ar_molecules\\Assets\\Resources\\onClickForScaling.cs", { 92, 182, 115, 58, 48, 225, 92, 243, 122, 98, 32, 197, 254, 233, 168, 52} }, //3 
 { "C:\\src\\projects\\moleculas_ar\\unity\\ar_molecules\\Assets\\Resources\\Rotate.cs", { 134, 249, 66, 61, 221, 135, 7, 169, 200, 37, 25, 126, 135, 121, 57, 23} }, //4 
-{ "C:\\src\\projects\\moleculas_ar\\unity\\ar_molecules\\Assets\\FlutterUnityIntegration\\NativeAPI.cs", { 170, 253, 221, 187, 58, 116, 245, 118, 185, 183, 201, 128, 113, 183, 57, 200} }, //5 
-{ "C:\\src\\projects\\moleculas_ar\\unity\\ar_molecules\\Assets\\FlutterUnityIntegration\\SingletonMonoBehaviour.cs", { 254, 153, 156, 7, 125, 80, 54, 232, 43, 224, 131, 171, 6, 216, 148, 232} }, //6 
-{ "C:\\src\\projects\\moleculas_ar\\unity\\ar_molecules\\Assets\\FlutterUnityIntegration\\UnityMessageManager.cs", { 14, 154, 138, 160, 236, 233, 194, 210, 188, 196, 124, 245, 176, 103, 184, 123} }, //7 
+{ "C:\\src\\projects\\moleculas_ar\\unity\\ar_molecules\\Assets\\FlutterUnityIntegration\\NativeAPI.cs", { 208, 54, 235, 120, 41, 215, 144, 136, 145, 2, 120, 143, 226, 235, 54, 128} }, //5 
+{ "C:\\src\\projects\\moleculas_ar\\unity\\ar_molecules\\Assets\\FlutterUnityIntegration\\SingletonMonoBehaviour.cs", { 6, 54, 29, 99, 60, 193, 151, 119, 58, 108, 148, 253, 7, 156, 13, 66} }, //6 
+{ "C:\\src\\projects\\moleculas_ar\\unity\\ar_molecules\\Assets\\FlutterUnityIntegration\\UnityMessageManager.cs", { 215, 160, 9, 171, 232, 219, 214, 181, 46, 20, 231, 125, 182, 72, 73, 178} }, //7 
 };
 #else
 static const Il2CppSequencePointSourceFile g_sequencePointSourceFiles[1] = { NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };

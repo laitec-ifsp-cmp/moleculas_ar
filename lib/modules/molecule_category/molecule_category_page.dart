@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:moleculas_ar/modules/ar_molecule/ar_molecule_page.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:moleculas_ar/modules/molecule_object/molecule_object_page.dart';
 import 'package:moleculas_ar/shared/models/molecule_model.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
-import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
 
 class MoleculeCategoryPage extends StatelessWidget {
@@ -18,7 +18,6 @@ class MoleculeCategoryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.colors.background,
       appBar: AppBarWidget(title: appBarTitle),
       body: BodyGradientMarginWidget(
         child: ListView.separated(
@@ -33,7 +32,7 @@ class MoleculeCategoryPage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (_) => ArMoleculePage(
+                  builder: (_) => MoleculeObjectPage(
                     name: molecules[i].name,
                     formula: molecules[i].molecularFormula,
                     objectPath: molecules[i].objectPath,
@@ -44,14 +43,11 @@ class MoleculeCategoryPage extends StatelessWidget {
               );
             },
           ),
-          padding: EdgeInsets.symmetric(
-            horizontal: AppRes.dimens.appHorizontalMargin,
-            vertical: AppRes.dimens.largeMargin,
-          ),
+          padding: EdgeInsets.symmetric(vertical: 30.h, horizontal: 24.w),
           scrollDirection: Axis.vertical,
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           separatorBuilder: (BuildContext context, int index) =>
-              SizedBox(height: AppRes.dimens.defaultVerticalMargin),
+              SizedBox(height: 20.h),
         ),
       ),
     );

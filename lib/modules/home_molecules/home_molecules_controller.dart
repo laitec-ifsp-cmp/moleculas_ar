@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
-
-import 'home_molecules_repository.dart';
 import 'package:moleculas_ar/app_state.dart';
 import 'package:moleculas_ar/shared/models/molecules_category_model.dart';
+
+import 'home_molecules_repository.dart';
 
 class HomeMoleculesController {
   final stateNotifier = ValueNotifier<AppState>(AppState.empty);

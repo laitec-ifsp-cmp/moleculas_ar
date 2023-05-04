@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:moleculas_ar/modules/home_info/home_info_page.dart';
+import 'package:moleculas_ar/modules/home_molecules/home_molecules_page.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
-import '../home_about/home_about_page.dart';
-import '../home_molecules/home_molecules_page.dart';
-import 'widgets/home_bottom_nav/home_bottom_nav_widget.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
+import 'package:permission_handler/permission_handler.dart';
+
+import 'widgets/home_bottom_nav/home_bottom_nav_widget.dart';
+import 'widgets/permission_required/permission_required_dialog.dart';
 
 class HomeNavigationPage extends StatefulWidget {
   const HomeNavigationPage({Key? key}) : super(key: key);
@@ -20,19 +24,18 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.colors.background,
       appBar: AppBar(
-        toolbarHeight: AppRes.dimens.appBarHeight,
+        toolbarHeight: 88,
         backgroundColor: AppTheme.colors.background,
         elevation: 0,
         title: Text((_currentPage == 0)
             ? AppRes.strings.molecules
-            : AppRes.strings.about),
+            : AppRes.strings.info),
         titleTextStyle: AppTheme.textStyles.homeTitle,
       ),
       body: BodyGradientMarginWidget(
         child: PageView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           controller: _pageController,
           onPageChanged: (int newPage) {
             setState(() {
@@ -41,36 +44,48 @@ class _HomeNavigationPageState extends State<HomeNavigationPage> {
           },
           children: const [
             HomeMoleculesPage(),
-            HomeAboutPage(),
+            HomeInfoPage(),
           ],
         ),
       ),
       bottomNavigationBar: Container(
-        height: 100,
-        margin: EdgeInsets.symmetric(
-          vertical: AppRes.dimens.defaultVerticalMargin,
-          horizontal: AppRes.dimens.appHorizontalMargin,
-        ),
+        height: 100.h,
+        margin: EdgeInsets.symmetric(vertical: 20.h, horizontal: 24.w),
         child: HomeBottomNavWidget(
           currentPage: _currentPage,
           onTapMolecules: () {
             if (_currentPage != 0) {
               setState(() {
                 _pageController.previousPage(
-                  duration: Duration(milliseconds: 400),
+                  duration: const Duration(milliseconds: 400),
                   curve: Curves.ease,
                 );
               });
             }
           },
-          onTapArMolecules: () {
-            Navigator.pushNamed(context, "/ar_molecule_target");
+          onTapArMolecules: () async {
+            var cameraStatus = await Permission.camera.status;
+
+            if (cameraStatus.isGranted) {
+              Navigator.pushNamed(context, "/ar_molecule_target");
+            } else if (cameraStatus.isDenied) {
+              var cameraRequestStatus = await Permission.camera.request();
+
+              if (cameraRequestStatus.isGranted) {
+                Navigator.pushNamed(context, "/ar_molecule_target");
+              } else if (cameraRequestStatus.isPermanentlyDenied) {
+                showDialog(
+                  context: context,
+                  builder: (_) => const PermissionRequiredDialog(),
+                );
+              }
+            }
           },
           onTapSettings: () {
             if (_currentPage != 1) {
               setState(() {
                 _pageController.nextPage(
-                  duration: Duration(milliseconds: 400),
+                  duration: const Duration(milliseconds: 400),
                   curve: Curves.ease,
                 );
               });

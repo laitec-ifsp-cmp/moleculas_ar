@@ -1,3 +1,5 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 abstract class IAppDimens {
   double get appBarHeight;
   double get appHorizontalMargin;
@@ -13,13 +15,13 @@ class AppDimens implements IAppDimens {
   double get appBarHeight => 104;
 
   @override
-  double get appHorizontalMargin => 24;
+  double get appHorizontalMargin => 24.w;
 
   @override
-  double get buttonMinHeight => 80;
+  double get buttonMinHeight => 80.h;
 
   @override
-  double get defaultVerticalMargin => 20;
+  double get defaultVerticalMargin => 20.h;
 
   @override
   double get hugeMargin => 40;

@@ -1,5 +1,5 @@
-import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
@@ -21,7 +21,6 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.colors.background,
       appBar: AppBar(
         backgroundColor: AppTheme.colors.background,
         elevation: 0,
@@ -30,17 +29,16 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             onPressed: () {
               Navigator.pushReplacementNamed(context, "/home_navigation");
             },
-            child: Text((AppRes.strings.jump).toUpperCase()).jumpOnBoarding,
+            child: Text((AppRes.strings.skip).toUpperCase()).textButton,
             style: TextButton.styleFrom(
-              primary: AppTheme.colors.primaryLight,
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppRes.dimens.appHorizontalMargin),
+              foregroundColor: AppTheme.colors.primaryLight,
+              padding: EdgeInsets.symmetric(horizontal: 24.w),
             ),
           ),
         ],
       ),
       body: PageView(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         controller: _pageController,
         onPageChanged: (int newPage) {
           setState(() {
@@ -48,31 +46,31 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           });
         },
         children: [
-          // TODO: Update on boarding information with final content.
-          // TODO - Strings: Strings of on boarding will be set after definitions.
           OnBoardingInfoWidget(
             image: AppRes.images.onBoardingDna,
-            title: "Introdução",
-            summary: AppRes.strings.shortLoremIpsum,
+            title: "",
+            summary:
+                "Este aplicativo fornece uma solução baseada em tecnologia "
+                "móvel para a compreensão quanto a estruturas químicas e biológicas",
           ),
           OnBoardingInfoWidget(
             image: AppRes.images.onBoardingDna3d,
-            title: "Introdução",
-            summary: AppRes.strings.shortLoremIpsum,
+            title: "",
+            summary: "O aplicativo ilustra as principais estruturas para "
+                "geometria molecular, isomeria e bioquímica",
           ),
           OnBoardingInfoWidget(
             image: AppRes.images.onBoardingDnaHolo,
-            title: "Introdução",
-            summary: AppRes.strings.shortLoremIpsum,
+            title: "",
+            summary:
+                "O aplicativo implementou mecanismos de padrões impressos, "
+                "recursos de interatividade 3D e tecnologia de Realidade Aumentada",
           ),
         ],
       ),
       bottomNavigationBar: Container(
-        height: 60,
-        margin: EdgeInsets.symmetric(
-          vertical: AppRes.dimens.defaultVerticalMargin,
-          horizontal: AppRes.dimens.appHorizontalMargin,
-        ),
+        height: 60.h,
+        margin: EdgeInsets.symmetric(vertical: 20.h, horizontal: 24.w),
         alignment: Alignment.topCenter,
         child: ProgressBarWidget(
           totalPage: _numPages,
@@ -81,7 +79,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             if (_currentPage != _numPages - 1) {
               setState(() {
                 _pageController.nextPage(
-                  duration: Duration(milliseconds: 400),
+                  duration: const Duration(milliseconds: 400),
                   curve: Curves.ease,
                 );
               });
@@ -92,7 +90,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           onBackPressed: () {
             setState(() {
               _pageController.previousPage(
-                duration: Duration(milliseconds: 400),
+                duration: const Duration(milliseconds: 400),
                 curve: Curves.ease,
               );
             });

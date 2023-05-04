@@ -1,26 +1,53 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter/scheduler.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:moleculas_ar/shared/controllers/app_access_controller.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/theme/app_theme.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 3)).then(
-        (value) => Navigator.pushReplacementNamed(context, "/on_boarding"));
+  State<SplashPage> createState() => _SplashPageState();
+}
 
+class _SplashPageState extends State<SplashPage> {
+  Future<void> _checkAppAccessCounter() async {
+    Future.delayed(const Duration(milliseconds: 1500)).then((value) async {
+      AppAccessController appAccessController = AppAccessController();
+      int counter = await appAccessController.getAppAccessCount(context);
+
+      String route = "/on_boarding";
+      if (counter < 3) {
+        await appAccessController.incrementAppAccessCount(context, counter);
+      } else {
+        route = "/home_navigation";
+      }
+
+      SchedulerBinding.instance.addPostFrameCallback((_) {
+        Navigator.pushReplacementNamed(context, route);
+      });
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _checkAppAccessCounter();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.colors.background,
       body: Column(children: [
         Expanded(
           flex: 3,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset("assets/images/logo.png"),
-              SizedBox(height: AppRes.dimens.defaultVerticalMargin),
+              Image.asset(AppRes.images.appLogo, height: 192.h, width: 192.w),
+              SizedBox(height: 20.h),
               Text(AppRes.strings.appName).splashText,
             ],
           ),
@@ -31,7 +58,7 @@ class SplashPage extends StatelessWidget {
             child: CircularProgressIndicator(
               valueColor:
                   AlwaysStoppedAnimation<Color>(AppTheme.colors.primaryLight),
-              strokeWidth: 3,
+              strokeWidth: 3.w,
             ),
           ),
         ),

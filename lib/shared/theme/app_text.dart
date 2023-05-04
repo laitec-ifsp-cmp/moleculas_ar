@@ -11,19 +11,23 @@ extension TextExt on Text {
 
   Text get title => Text(data!, style: AppTheme.textStyles.title);
 
+  Text get titleSmall => Text(data!, style: AppTheme.textStyles.titleSmall);
+
   Text get summary => Text(
         data!,
         style: AppTheme.textStyles.summary,
         textAlign: TextAlign.center,
       );
 
-  Text get jumpOnBoarding =>
-      Text(data!, style: AppTheme.textStyles.jumpOnBoarding);
+  Text get textButton => Text(data!, style: AppTheme.textStyles.textButton);
 
   Text get textFilledButton =>
       Text(data!, style: AppTheme.textStyles.textFilledButton);
 
   Text get appBarTitle => Text(data!, style: AppTheme.textStyles.appBarTitle);
+
+  Text get linkText => Text(data!,
+      overflow: TextOverflow.ellipsis, style: AppTheme.textStyles.linkText);
 
   Text get moleculeName => Text(data!, style: AppTheme.textStyles.moleculeName);
 
