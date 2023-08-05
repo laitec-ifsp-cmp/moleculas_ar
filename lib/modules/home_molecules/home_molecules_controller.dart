@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:moleculas_ar/app_state.dart';
+import 'package:moleculas_ar/shared/utils/app_state.dart';
 import 'package:moleculas_ar/shared/models/molecules_category_model.dart';
 
 import 'home_molecules_repository.dart';
@@ -9,7 +9,7 @@ class HomeMoleculesController {
   set state(AppState state) => stateNotifier.value = state;
   AppState get state => stateNotifier.value;
 
-  List<MoleculesCategoryModel>? moleculesCategories;
+  List<MoleculeCategoryModel>? moleculesCategories;
 
   final repository = HomeMoleculesRepository();
 

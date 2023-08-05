@@ -1,337 +1,385 @@
 [
   {
-    "title": "Ácidos Nucléicos",
+    "category": "0",
+    "name": "Ribose",
+    "molecularFormula": "C\u2085H\u2081\u2080O\u2085",
+    "objectPath": "assets/objects/acidos_nucleicos/ribose.obj",
     "iconPath": "assets/images/acidos_nucleicos.png",
-    "molecules": [
-      {
-        "name": "Ribose",
-        "molecularFormula": "C\u2085H\u2081\u2080O\u2085",
-        "objectPath": "assets/objects/acidos_nucleicos/ribose.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/ribose.png"
-      },
-      {
-        "name": "Desoxirribose",
-        "molecularFormula": "C\u2085H\u2081\u2080O\u2084",
-        "objectPath": "assets/objects/acidos_nucleicos/desoxirribose.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/desoxirribose.png"
-      },
-      {
-        "name": "Ácido fosfórico",
-        "molecularFormula": "H\u2083PO\u2084",
-        "objectPath": "assets/objects/acidos_nucleicos/acido_fosforico.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/acido_fosforico.png"
-      },
-      {
-        "name": "Adenina",
-        "molecularFormula": "C\u2085H\u2085N\u2085",
-        "objectPath": "assets/objects/acidos_nucleicos/adenina.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/adenina.png"
-      },
-      {
-        "name": "Guanina",
-        "molecularFormula": "C\u2085H\u2085N\u2085O",
-        "objectPath": "assets/objects/acidos_nucleicos/guanina.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/guanina.png"
-      },
-      {
-        "name": "Citosina",
-        "molecularFormula": "C\u2084H\u2085N\u2083O",
-        "objectPath": "assets/objects/acidos_nucleicos/citosina.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/citosina.png"
-      },
-      {
-        "name": "Timina (DNA)",
-        "molecularFormula": "C\u2085H\u2086N\u2082O\u2082",
-        "objectPath": "assets/objects/acidos_nucleicos/timina.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/timina.png"
-      },
-      {
-        "name": "Uracila (RNA)",
-        "molecularFormula": "C\u2084H\u2084N\u2082O\u2082",
-        "objectPath": "assets/objects/acidos_nucleicos/uracila.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/uracila.png"
-      },
-      {
-        "name": "Desoxiadenosina monofosfato",
-        "molecularFormula": "C\u2081\u2080H\u2081\u2084N\u2085O\u2086P",
-        "objectPath": "assets/objects/acidos_nucleicos/desoxiadenosina_monofosfato.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/desoxiadenosina_monofosfato.png"
-      },
-      {
-        "name": "Desoxicitidina monofosfato",
-        "molecularFormula": "C\u2089H\u2081\u2084N\u2085O\u2087P",
-        "objectPath": "assets/objects/acidos_nucleicos/desoxicitidina_monofosfato.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/desoxicitidina_monofosfato.png"
-      },
-      {
-        "name": "Desoxiguanosina monofosfato",
-        "molecularFormula": "C\u2081\u2080H\u2081\u2084N\u2085O\u2087P",
-        "objectPath": "assets/objects/acidos_nucleicos/desoxiguanosina_monofosfato.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/desoxiguanosina_monofosfato.png"
-      },
-      {
-        "name": "Desoxitimidina monofosfato",
-        "molecularFormula": "C\u2081\u2080H\u2081\u2083N\u2082O\u2088P",
-        "objectPath": "assets/objects/acidos_nucleicos/desoxitimidina_monofosfato.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/desoxitimidina_monofosfato.png"
-      },
-      {
-        "name": "Adenosina",
-        "molecularFormula": "C\u2081\u2080H\u2081\u2083N\u2085O\u2084",
-        "objectPath": "assets/objects/acidos_nucleicos/adenosina.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/adenosina.png"
-      },
-      {
-        "name": "Citidina",
-        "molecularFormula": "C\u2089H\u2081\u2083N\u2083O\u2085",
-        "objectPath": "assets/objects/acidos_nucleicos/citidina.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/citidina.png"
-      },
-      {
-        "name": "Guanosina",
-        "molecularFormula": "C\u2081\u2080H\u2081\u2083N\u2085O\u2085",
-        "objectPath": "assets/objects/acidos_nucleicos/guanosina.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/guanosina.jpg"
-      },
-      {
-        "name": "Uridina",
-        "molecularFormula": "C\u2089H\u2081\u2082N\u2082O\u2086",
-        "objectPath": "assets/objects/acidos_nucleicos/uridina.obj",
-        "iconPath": "assets/images/acidos_nucleicos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/uridina.png"
-      }
-    ]
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/ribose.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Desoxirribose",
+    "molecularFormula": "C\u2085H\u2081\u2080O\u2084",
+    "objectPath": "assets/objects/acidos_nucleicos/desoxirribose.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/desoxirribose.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Ácido fosfórico",
+    "molecularFormula": "H\u2083PO\u2084",
+    "objectPath": "assets/objects/acidos_nucleicos/acido_fosforico.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/acido_fosforico.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Adenina",
+    "molecularFormula": "C\u2085H\u2085N\u2085",
+    "objectPath": "assets/objects/acidos_nucleicos/adenina.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/adenina.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Guanina",
+    "molecularFormula": "C\u2085H\u2085N\u2085O",
+    "objectPath": "assets/objects/acidos_nucleicos/guanina.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/guanina.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Citosina",
+    "molecularFormula": "C\u2084H\u2085N\u2083O",
+    "objectPath": "assets/objects/acidos_nucleicos/citosina.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/citosina.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Timina (DNA)",
+    "molecularFormula": "C\u2085H\u2086N\u2082O\u2082",
+    "objectPath": "assets/objects/acidos_nucleicos/timina.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/timina.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Uracila (RNA)",
+    "molecularFormula": "C\u2084H\u2084N\u2082O\u2082",
+    "objectPath": "assets/objects/acidos_nucleicos/uracila.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/uracila.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Desoxiadenosina monofosfato",
+    "molecularFormula": "C\u2081\u2080H\u2081\u2084N\u2085O\u2086P",
+    "objectPath": "assets/objects/acidos_nucleicos/desoxiadenosina_monofosfato.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/desoxiadenosina_monofosfato.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Desoxicitidina monofosfato",
+    "molecularFormula": "C\u2089H\u2081\u2084N\u2085O\u2087P",
+    "objectPath": "assets/objects/acidos_nucleicos/desoxicitidina_monofosfato.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/desoxicitidina_monofosfato.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Desoxiguanosina monofosfato",
+    "molecularFormula": "C\u2081\u2080H\u2081\u2084N\u2085O\u2087P",
+    "objectPath": "assets/objects/acidos_nucleicos/desoxiguanosina_monofosfato.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/desoxiguanosina_monofosfato.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Desoxitimidina monofosfato",
+    "molecularFormula": "C\u2081\u2080H\u2081\u2083N\u2082O\u2088P",
+    "objectPath": "assets/objects/acidos_nucleicos/desoxitimidina_monofosfato.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/desoxitimidina_monofosfato.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Adenosina",
+    "molecularFormula": "C\u2081\u2080H\u2081\u2083N\u2085O\u2084",
+    "objectPath": "assets/objects/acidos_nucleicos/adenosina.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/adenosina.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Citidina",
+    "molecularFormula": "C\u2089H\u2081\u2083N\u2083O\u2085",
+    "objectPath": "assets/objects/acidos_nucleicos/citidina.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/citidina.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Guanosina",
+    "molecularFormula": "C\u2081\u2080H\u2081\u2083N\u2085O\u2085",
+    "objectPath": "assets/objects/acidos_nucleicos/guanosina.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/guanosina.jpg",
+    "targetImagePath": ""
+  },
+  {
+    "category": "0",
+    "name": "Uridina",
+    "molecularFormula": "C\u2089H\u2081\u2082N\u2082O\u2086",
+    "objectPath": "assets/objects/acidos_nucleicos/uridina.obj",
+    "iconPath": "assets/images/acidos_nucleicos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/acidos_nucleicos/uridina.png",
+    "targetImagePath": ""
   },
 
   {
-    "title": "Geometria Molecular",
+    "category": "1",
+    "name": "Hexafluoreto de Enxofre",
+    "molecularFormula": "SF\u2086",
+    "objectPath": "assets/objects/geometria_molecular/hexafluoreto_de_enxofre.obj",
     "iconPath": "assets/images/geometria_molecular.png",
-    "molecules": [
-      {
-        "name": "Hexafluoreto de Enxofre",
-        "molecularFormula": "SF\u2086",
-        "objectPath": "assets/objects/geometria_molecular/hexafluoreto_de_enxofre.obj",
-        "iconPath": "assets/images/geometria_molecular.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/geometria_molecular/hexafluoreto_de_enxofre.png"
-      },
-      {
-        "name": "Amônia",
-        "molecularFormula": "NH\u2083",
-        "objectPath": "assets/objects/geometria_molecular/amonia.obj",
-        "iconPath": "assets/images/geometria_molecular.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/geometria_molecular/amonia.png"
-      },
-      {
-        "name": "Metano",
-        "molecularFormula": "CH\u2084",
-        "objectPath": "assets/objects/geometria_molecular/metano.obj",
-        "iconPath": "assets/images/geometria_molecular.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/geometria_molecular/metano.png"
-      },
-      {
-        "name": "Óxido de Hidrogênio (Água)",
-        "molecularFormula": "H\u2082O",
-        "objectPath": "assets/objects/geometria_molecular/oxido_de_hidrogenio.obj",
-        "iconPath": "assets/images/geometria_molecular.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/geometria_molecular/oxido_de_hidrogenio.png"
-      },
-      {
-        "name": "Tricloreto de Boro",
-        "molecularFormula": "BCl\u2083",
-        "objectPath": "assets/objects/geometria_molecular/tricloreto_de_boro.obj",
-        "iconPath": "assets/images/geometria_molecular.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/geometria_molecular/tricloreto_de_boro.png"
-      }
-    ]
+    "structuralFormulaImagePath": "assets/images/structural_formulas/geometria_molecular/hexafluoreto_de_enxofre.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "1",
+    "name": "Amônia",
+    "molecularFormula": "NH\u2083",
+    "objectPath": "assets/objects/geometria_molecular/amonia.obj",
+    "iconPath": "assets/images/geometria_molecular.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/geometria_molecular/amonia.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "1",
+    "name": "Metano",
+    "molecularFormula": "CH\u2084",
+    "objectPath": "assets/objects/geometria_molecular/metano.obj",
+    "iconPath": "assets/images/geometria_molecular.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/geometria_molecular/metano.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "1",
+    "name": "Óxido de Hidrogênio (Água)",
+    "molecularFormula": "H\u2082O",
+    "objectPath": "assets/objects/geometria_molecular/oxido_de_hidrogenio.obj",
+    "iconPath": "assets/images/geometria_molecular.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/geometria_molecular/oxido_de_hidrogenio.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "1",
+    "name": "Tricloreto de Boro",
+    "molecularFormula": "BCl\u2083",
+    "objectPath": "assets/objects/geometria_molecular/tricloreto_de_boro.obj",
+    "iconPath": "assets/images/geometria_molecular.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/geometria_molecular/tricloreto_de_boro.png",
+    "targetImagePath": ""
   },
 
   {
-    "title": "Isomeria Geométrica",
+    "category": "2",
+    "name": "Ácido trans-butenodióico",
+    "molecularFormula": "C\u2084H\u2084O\u2084",
+    "objectPath": "assets/objects/isomeria_geometrica/acido_trans-butenodioico.obj",
     "iconPath": "assets/images/isomeria_geometrica.png",
-    "molecules": [
-      {
-        "name": "Ácido trans-butenodióico",
-        "molecularFormula": "C\u2084H\u2084O\u2084",
-        "objectPath": "assets/objects/isomeria_geometrica/acido_trans-butenodioico.obj",
-        "iconPath": "assets/images/isomeria_geometrica.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/acido_trans-butenodioico.png"
-      },
-      {
-        "name": "Ácido cis-butenodióico",
-        "molecularFormula": "C\u2084H\u2084O\u2084",
-        "objectPath": "assets/objects/isomeria_geometrica/acido_cis-butenodioico.obj",
-        "iconPath": "assets/images/isomeria_geometrica.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/acido_cis-butenodioico.png"
-      },
-      {
-        "name": "Trans-1-cloro-1,2-dimetil-ciclopentano",
-        "molecularFormula": "C\u2087H\u2081\u2083Cl",
-        "objectPath": "assets/objects/isomeria_geometrica/trans-1-cloro-1_2-dimetil-ciclopentano.obj",
-        "iconPath": "assets/images/isomeria_geometrica.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/trans-1-cloro-1_2-dimetil-ciclopentano.png"
-      },
-      {
-        "name": "Cis-1-cloro-1,2-dimetil-ciclopentano",
-        "molecularFormula": "C\u2087H\u2081\u2083Cl",
-        "objectPath": "assets/objects/isomeria_geometrica/cis-1-cloro-1_2-dimetil-ciclopentano.obj",
-        "iconPath": "assets/images/isomeria_geometrica.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/cis-1-cloro-1_2-dimetil-ciclopentano.png"
-      },
-      {
-        "name": "Trans-but-2-eno",
-        "molecularFormula": "C\u2084H\u2088",
-        "objectPath": "assets/objects/isomeria_geometrica/trans-but-2-eno.obj",
-        "iconPath": "assets/images/isomeria_geometrica.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/trans-but-2-eno.png"
-      },
-      {
-        "name": "Cis-but-2-eno",
-        "molecularFormula": "C\u2084H\u2088",
-        "objectPath": "assets/objects/isomeria_geometrica/cis-but-2-eno.obj",
-        "iconPath": "assets/images/isomeria_geometrica.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/cis-but-2-eno.png"
-      },
-      {
-        "name": "Trans-dimetil-ciclopropano",
-        "molecularFormula": "C\u2085H\u2081\u2080",
-        "objectPath": "assets/objects/isomeria_geometrica/trans-dimetil-ciclopropano.obj",
-        "iconPath": "assets/images/isomeria_geometrica.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/trans-dimetil-ciclopropano.png"
-      },
-      {
-        "name": "Cis-dimetil-ciclopropano",
-        "molecularFormula": "C\u2085H\u2081\u2080",
-        "objectPath": "assets/objects/isomeria_geometrica/cis-dimetil-ciclopropano.obj",
-        "iconPath": "assets/images/isomeria_geometrica.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/cis-dimetil-ciclopropano.png"
-      }
-    ]
+    "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/acido_trans-butenodioico.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "2",
+    "name": "Ácido cis-butenodióico",
+    "molecularFormula": "C\u2084H\u2084O\u2084",
+    "objectPath": "assets/objects/isomeria_geometrica/acido_cis-butenodioico.obj",
+    "iconPath": "assets/images/isomeria_geometrica.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/acido_cis-butenodioico.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "2",
+    "name": "Trans-1-cloro-1,2-dimetil-ciclopentano",
+    "molecularFormula": "C\u2087H\u2081\u2083Cl",
+    "objectPath": "assets/objects/isomeria_geometrica/trans-1-cloro-1_2-dimetil-ciclopentano.obj",
+    "iconPath": "assets/images/isomeria_geometrica.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/trans-1-cloro-1_2-dimetil-ciclopentano.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "2",
+    "name": "Cis-1-cloro-1,2-dimetil-ciclopentano",
+    "molecularFormula": "C\u2087H\u2081\u2083Cl",
+    "objectPath": "assets/objects/isomeria_geometrica/cis-1-cloro-1_2-dimetil-ciclopentano.obj",
+    "iconPath": "assets/images/isomeria_geometrica.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/cis-1-cloro-1_2-dimetil-ciclopentano.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "2",
+    "name": "Trans-but-2-eno",
+    "molecularFormula": "C\u2084H\u2088",
+    "objectPath": "assets/objects/isomeria_geometrica/trans-but-2-eno.obj",
+    "iconPath": "assets/images/isomeria_geometrica.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/trans-but-2-eno.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "2",
+    "name": "Cis-but-2-eno",
+    "molecularFormula": "C\u2084H\u2088",
+    "objectPath": "assets/objects/isomeria_geometrica/cis-but-2-eno.obj",
+    "iconPath": "assets/images/isomeria_geometrica.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/cis-but-2-eno.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "2",
+    "name": "Trans-dimetil-ciclopropano",
+    "molecularFormula": "C\u2085H\u2081\u2080",
+    "objectPath": "assets/objects/isomeria_geometrica/trans-dimetil-ciclopropano.obj",
+    "iconPath": "assets/images/isomeria_geometrica.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/trans-dimetil-ciclopropano.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "2",
+    "name": "Cis-dimetil-ciclopropano",
+    "molecularFormula": "C\u2085H\u2081\u2080",
+    "objectPath": "assets/objects/isomeria_geometrica/cis-dimetil-ciclopropano.obj",
+    "iconPath": "assets/images/isomeria_geometrica.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_geometrica/cis-dimetil-ciclopropano.png",
+    "targetImagePath": ""
   },
 
   {
-    "title": "Isomeria Óptica",
+    "category": "3",
+    "name": "Bromo-cloro-fluor-metano 1",
+    "molecularFormula": "CHBrClF",
+    "objectPath": "assets/objects/isomeria_optica/bromo-cloro-fluor-metano_1.obj",
     "iconPath": "assets/images/isomeria_optica.png",
-    "molecules": [
-      {
-        "name": "Bromo-cloro-fluor-metano 1",
-        "molecularFormula": "CHBrClF",
-        "objectPath": "assets/objects/isomeria_optica/bromo-cloro-fluor-metano_1.obj",
-        "iconPath": "assets/images/isomeria_optica.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_optica/bromo-cloro-fluor-metano_1.png"
-      },
-      {
-        "name": "Bromo-cloro-fluor-metano 2",
-        "molecularFormula": "CHBrClF",
-        "objectPath": "assets/objects/isomeria_optica/bromo-cloro-fluor-metano_2.obj",
-        "iconPath": "assets/images/isomeria_optica.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_optica/bromo-cloro-fluor-metano_2.png"
-      },
-      {
-        "name": "Glicose",
-        "molecularFormula": "C\u2086H\u2081\u2082O\u2086",
-        "objectPath": "assets/objects/isomeria_optica/glicose.obj",
-        "iconPath": "assets/images/isomeria_optica.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_optica/glicose.png"
-      },
-      {
-        "name": "Frutose",
-        "molecularFormula": "C\u2086H\u2081\u2082O\u2086",
-        "objectPath": "assets/objects/isomeria_optica/frutose.obj",
-        "iconPath": "assets/images/isomeria_optica.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_optica/frutose.png"
-      },
-      {
-        "name": "Sacarose",
-        "molecularFormula": "C\u2081\u2082H\u2082\u2082O\u2081\u2081",
-        "objectPath": "assets/objects/isomeria_optica/sacarose.obj",
-        "iconPath": "assets/images/isomeria_optica.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_optica/sacarose.png"
-      }
-    ]
+    "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_optica/bromo-cloro-fluor-metano_1.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "3",
+    "name": "Bromo-cloro-fluor-metano 2",
+    "molecularFormula": "CHBrClF",
+    "objectPath": "assets/objects/isomeria_optica/bromo-cloro-fluor-metano_2.obj",
+    "iconPath": "assets/images/isomeria_optica.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_optica/bromo-cloro-fluor-metano_2.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "3",
+    "name": "Glicose",
+    "molecularFormula": "C\u2086H\u2081\u2082O\u2086",
+    "objectPath": "assets/objects/isomeria_optica/glicose.obj",
+    "iconPath": "assets/images/isomeria_optica.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_optica/glicose.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "3",
+    "name": "Frutose",
+    "molecularFormula": "C\u2086H\u2081\u2082O\u2086",
+    "objectPath": "assets/objects/isomeria_optica/frutose.obj",
+    "iconPath": "assets/images/isomeria_optica.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_optica/frutose.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "3",
+    "name": "Sacarose",
+    "molecularFormula": "C\u2081\u2082H\u2082\u2082O\u2081\u2081",
+    "objectPath": "assets/objects/isomeria_optica/sacarose.obj",
+    "iconPath": "assets/images/isomeria_optica.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/isomeria_optica/sacarose.png",
+    "targetImagePath": ""
   },
 
   {
-    "title": "Aminoácidos",
+    "category": "4",
+    "name": "Isoleucina",
+    "molecularFormula": "C\u2086H\u2081\u2083NO\u2082",
+    "objectPath": "assets/objects/aminoacidos/isoleucina.obj",
     "iconPath": "assets/images/aminoacidos.png",
-    "molecules": [
-      {
-        "name": "Isoleucina",
-        "molecularFormula": "C\u2086H\u2081\u2083NO\u2082",
-        "objectPath": "assets/objects/aminoacidos/isoleucina.obj",
-        "iconPath": "assets/images/aminoacidos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/aminoacidos/isoleucina.png"
-      },
-      {
-        "name": "Histidina",
-        "molecularFormula": "C\u2086H\u2089N\u2083O\u2082",
-        "objectPath": "assets/objects/aminoacidos/histidina.obj",
-        "iconPath": "assets/images/aminoacidos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/aminoacidos/histidina.png"
-      },
-      {
-        "name": "Cisteína",
-        "molecularFormula": "C\u2083H\u2087NO\u2082S",
-        "objectPath": "assets/objects/aminoacidos/cisteina.obj",
-        "iconPath": "assets/images/aminoacidos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/aminoacidos/cisteina.png"
-      },
-      {
-        "name": "Arginina",
-        "molecularFormula": "C\u2086H\u2081\u2084N\u2084O\u2082",
-        "objectPath": "assets/objects/aminoacidos/arginina.obj",
-        "iconPath": "assets/images/aminoacidos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/aminoacidos/arginina.png"
-      },
-      {
-        "name": "Alanina",
-        "molecularFormula": "C\u2083H\u2087NO\u2082",
-        "objectPath": "assets/objects/aminoacidos/alanina.obj",
-        "iconPath": "assets/images/aminoacidos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/aminoacidos/alanina.png"
-      },
-      {
-        "name": "Triptofano",
-        "molecularFormula": "C\u2081\u2081H\u2081\u2082N\u2082O\u2082",
-        "objectPath": "assets/objects/aminoacidos/triptofano.obj",
-        "iconPath": "assets/images/aminoacidos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/aminoacidos/triptofano.png"
-      }
-    ]
+    "structuralFormulaImagePath": "assets/images/structural_formulas/aminoacidos/isoleucina.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "4",
+    "name": "Histidina",
+    "molecularFormula": "C\u2086H\u2089N\u2083O\u2082",
+    "objectPath": "assets/objects/aminoacidos/histidina.obj",
+    "iconPath": "assets/images/aminoacidos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/aminoacidos/histidina.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "4",
+    "name": "Cisteína",
+    "molecularFormula": "C\u2083H\u2087NO\u2082S",
+    "objectPath": "assets/objects/aminoacidos/cisteina.obj",
+    "iconPath": "assets/images/aminoacidos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/aminoacidos/cisteina.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "4",
+    "name": "Arginina",
+    "molecularFormula": "C\u2086H\u2081\u2084N\u2084O\u2082",
+    "objectPath": "assets/objects/aminoacidos/arginina.obj",
+    "iconPath": "assets/images/aminoacidos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/aminoacidos/arginina.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "4",
+    "name": "Alanina",
+    "molecularFormula": "C\u2083H\u2087NO\u2082",
+    "objectPath": "assets/objects/aminoacidos/alanina.obj",
+    "iconPath": "assets/images/aminoacidos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/aminoacidos/alanina.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "4",
+    "name": "Triptofano",
+    "molecularFormula": "C\u2081\u2081H\u2081\u2082N\u2082O\u2082",
+    "objectPath": "assets/objects/aminoacidos/triptofano.obj",
+    "iconPath": "assets/images/aminoacidos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/aminoacidos/triptofano.png",
+    "targetImagePath": ""
   },
 
   {
-    "title": "Peptídios",
+    "category": "5",
+    "name": "Aspartame 1",
+    "molecularFormula": "C\u2081\u2084H\u2081\u2088N\u2082O\u2085",
+    "objectPath": "assets/objects/peptideos/aspartame_1.obj",
     "iconPath": "assets/images/peptideos.png",
-    "molecules": [
-      {
-        "name": "Aspartame 1",
-        "molecularFormula": "C\u2081\u2084H\u2081\u2088N\u2082O\u2085",
-        "objectPath": "assets/objects/peptideos/aspartame_1.obj",
-        "iconPath": "assets/images/peptideos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/peptideos/aspartame.png"
-      },
-      {
-        "name": "Aspartame 2",
-        "molecularFormula": "C\u2081\u2084H\u2081\u2088N\u2082O\u2085",
-        "objectPath": "assets/objects/peptideos/aspartame_2.obj",
-        "iconPath": "assets/images/peptideos.png",
-        "structuralFormulaImagePath": "assets/images/structural_formulas/peptideos/aspartame.png"
-      }
-    ]
+    "structuralFormulaImagePath": "assets/images/structural_formulas/peptideos/aspartame.png",
+    "targetImagePath": ""
+  },
+  {
+    "category": "5",
+    "name": "Aspartame 2",
+    "molecularFormula": "C\u2081\u2084H\u2081\u2088N\u2082O\u2085",
+    "objectPath": "assets/objects/peptideos/aspartame_2.obj",
+    "iconPath": "assets/images/peptideos.png",
+    "structuralFormulaImagePath": "assets/images/structural_formulas/peptideos/aspartame.png",
+    "targetImagePath": ""
   }
 ]
