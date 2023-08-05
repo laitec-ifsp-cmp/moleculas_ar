@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:moleculas_ar/app_state.dart';
+import 'package:moleculas_ar/shared/models/molecules_category_model.dart';
+import 'package:moleculas_ar/shared/utils/app_state.dart';
 import 'package:moleculas_ar/modules/home_molecules/home_molecules_controller.dart';
 import 'package:moleculas_ar/modules/molecule_category/molecule_category_page.dart';
-import 'package:moleculas_ar/shared/models/molecule_model.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/shimmers/item_list/item_list_shimmer.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
@@ -42,7 +42,7 @@ class _HomeMoleculesPageState extends State<HomeMoleculesPage> {
                 goToMoleculeCategoryPage(
                   context: context,
                   appBarTitle: controller.moleculesCategories![i].title,
-                  molecules: controller.moleculesCategories![i].molecules,
+                  category: controller.moleculesCategories![i].category,
                 );
               },
             ),
@@ -58,14 +58,14 @@ class _HomeMoleculesPageState extends State<HomeMoleculesPage> {
   void goToMoleculeCategoryPage({
     required dynamic context,
     required String appBarTitle,
-    required List<MoleculeModel> molecules,
+    required MoleculeCategories category
   }) {
     Navigator.push(
       context,
       MaterialPageRoute(
         builder: (_) => MoleculeCategoryPage(
           appBarTitle: appBarTitle,
-          molecules: molecules,
+          category: category,
         ),
       ),
     );
