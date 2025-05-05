@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:moleculas_ar/app_state.dart';
-import 'package:moleculas_ar/modules/home_molecules/home_molecules_controller.dart';
+import 'package:localization/localization.dart';
+import 'package:moleculas_ar/shared/models/molecules_category_model.dart';
+import 'package:moleculas_ar/shared/utils/app_state.dart';
+import 'package:moleculas_ar/modules/home_molecules/home_molecules_provider.dart';
 import 'package:moleculas_ar/modules/molecule_category/molecule_category_page.dart';
-import 'package:moleculas_ar/shared/models/molecule_model.dart';
 import 'package:moleculas_ar/shared/res/app_res.dart';
 import 'package:moleculas_ar/shared/shimmers/item_list/item_list_shimmer.dart';
 import 'package:moleculas_ar/shared/widgets/shared_widgets.dart';
@@ -16,33 +17,33 @@ class HomeMoleculesPage extends StatefulWidget {
 }
 
 class _HomeMoleculesPageState extends State<HomeMoleculesPage> {
-  final controller = HomeMoleculesController();
+  final provider = HomeMoleculesProvider();
 
   @override
   void initState() {
     super.initState();
-    controller.getMoleculesCategories();
-    controller.stateNotifier.addListener(() {
+    provider.getMoleculesCategories();
+    provider.stateNotifier.addListener(() {
       setState(() {});
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return (controller.state == AppState.success)
+    return (provider.state == AppState.success)
         ? ListView.separated(
-            itemCount: controller.moleculesCategories!.length,
+            itemCount: provider.moleculesCategories!.length,
             itemBuilder: (context, i) => IconTextOutlinedButtonWidget(
               imagePath:
-                  (controller.moleculesCategories![i].iconPath).isNotEmpty
-                      ? controller.moleculesCategories![i].iconPath
+                  (provider.moleculesCategories![i].iconPath).isNotEmpty
+                      ? provider.moleculesCategories![i].iconPath
                       : AppRes.images.iconThreeMolecules,
-              title: controller.moleculesCategories![i].title,
+              title: provider.moleculesCategories![i].title.i18n(),
               onPressed: () {
                 goToMoleculeCategoryPage(
                   context: context,
-                  appBarTitle: controller.moleculesCategories![i].title,
-                  molecules: controller.moleculesCategories![i].molecules,
+                  appBarTitle: provider.moleculesCategories![i].title.i18n(),
+                  category: provider.moleculesCategories![i].category,
                 );
               },
             ),
@@ -52,20 +53,20 @@ class _HomeMoleculesPageState extends State<HomeMoleculesPage> {
             separatorBuilder: (BuildContext context, int index) =>
                 SizedBox(height: 20.h),
           )
-        : ItemListShimmer(listLength: controller.moleculesCategories?.length);
+        : ItemListShimmer(listLength: provider.moleculesCategories?.length);
   }
 
   void goToMoleculeCategoryPage({
     required dynamic context,
     required String appBarTitle,
-    required List<MoleculeModel> molecules,
+    required MoleculeCategories category
   }) {
     Navigator.push(
       context,
       MaterialPageRoute(
         builder: (_) => MoleculeCategoryPage(
           appBarTitle: appBarTitle,
-          molecules: molecules,
+          category: category,
         ),
       ),
     );
